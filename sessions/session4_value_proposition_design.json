@@ -1,0 +1,155 @@
+{
+  "meta": {
+    "session": "Session 4 · Value Proposition Design",
+    "course": "Designing Innovative Products & Business",
+    "author": "Jordi Cusidó Roura",
+    "output": "Session4_Value_Proposition_Design.mp4",
+    "tts": "edge",
+    "voice": "en-GB-RyanNeural",
+    "rate": "+0%"
+  },
+  "scenes": [
+    {
+      "type": "title",
+      "label": "Session 4",
+      "title": "Value Proposition Design",
+      "subtitle": "Zooming into the heart of the business model: what customers need, and what we offer",
+      "beats": [
+        {"say": "Welcome to session four. Today we zoom into the heart of the business model: the value proposition. What do customers really need, and what exactly do we offer them?"}
+      ]
+    },
+    {
+      "type": "statement",
+      "label": "01 · Why zoom in?",
+      "text": "Most business models fail on the value proposition.",
+      "sub": "Nobody wants what we offer. So we zoom into two blocks of the canvas: customer segments and value proposition.",
+      "beats": [
+        {"say": "Most business models do not fail because of costs or channels. They fail on the value proposition: nobody wants what we offer."},
+        {"say": "So we zoom into two blocks of the Business Model Canvas, customer segments and value propositions, and look at them in much more detail.", "show": "sub"}
+      ]
+    },
+    {
+      "type": "cards",
+      "label": "Before the canvas",
+      "title": "How SMARTIVE described value in 2012",
+      "cards": [
+        {"title": "An ecosystem map", "text": "Showed who was involved: operators, OEMs, maintenance providers."},
+        {"title": "What it missed", "text": "What each customer was trying to achieve, what frustrated them, and why they would choose us."},
+        {"title": "What the canvas adds", "text": "It makes jobs, pains and gains explicit, segment by segment."}
+      ],
+      "beats": [
+        {"say": "In 2012, SMARTIVE described its value with an ecosystem map. It showed who was involved: wind-farm operators, turbine manufacturers, maintenance providers.", "show": "card0"},
+        {"say": "But it did not show what each customer was trying to achieve, what frustrated them, or why they would choose us.", "show": "card1"},
+        {"say": "That is exactly what the Value Proposition Canvas makes explicit.", "show": "card2"}
+      ]
+    },
+    {
+      "type": "vpc",
+      "label": "The canvas",
+      "title": "The Value Proposition Canvas",
+      "beats": [
+        {"say": "The canvas has two sides. On the right, a circle: the customer profile. Here you observe one customer segment.", "show": "shape"},
+        {"say": "What jobs are they trying to get done? What pains do they suffer? What gains do they want?", "show": ["jobs", "pains", "gains"]},
+        {"say": "On the left, a square: the value map. Here you design. Your products and services, the pain relievers, and the gain creators.", "show": ["products", "pain_relievers", "gain_creators"]},
+        {"say": "You achieve fit when what you design on the left addresses the jobs, pains and gains that matter most on the right.", "show": "fit"}
+      ]
+    },
+    {
+      "type": "cards",
+      "label": "02 · Customer profile",
+      "title": "Start on the right: jobs, pains and gains",
+      "cards": [
+        {"title": "Customer jobs", "text": "What customers are trying to get done in their work or life: functional, social and emotional jobs."},
+        {"title": "Pains", "text": "Bad outcomes, risks and obstacles related to the jobs. What annoys them before, during and after?"},
+        {"title": "Gains", "text": "Outcomes and benefits customers want: required, expected, desired and unexpected."}
+      ],
+      "banner": "Rank them: which jobs matter most, which pains are most extreme, which gains are essential?",
+      "beats": [
+        {"say": "Always start on the right, by understanding the customer. Customer jobs are what people are trying to get done. Not only functional jobs: also social jobs, like looking good, and emotional jobs, like feeling secure.", "show": "card0"},
+        {"say": "Pains are the bad outcomes, risks and obstacles around those jobs. Ask what annoys them before, during and after the job.", "show": "card1"},
+        {"say": "Gains are the outcomes they want, from the ones they require, to the ones that would surprise them.", "show": "card2"},
+        {"say": "Then rank them. Which jobs matter most? Which pains are extreme? Which gains are essential? And remember: all of this comes from interviews, not from opinions.", "show": "banner"}
+      ]
+    },
+    {
+      "type": "cards",
+      "label": "03 · Value map",
+      "title": "Then design the left side to match",
+      "cards": [
+        {"title": "Products & services", "text": "What we offer: physical, digital, intangible or financial."},
+        {"title": "Pain relievers", "text": "How we eliminate or reduce specific pains."},
+        {"title": "Gain creators", "text": "How we produce the outcomes and benefits customers want."}
+      ],
+      "banner": "Every product, pain reliever and gain creator should map to a job, a pain or a gain.",
+      "beats": [
+        {"say": "Now design the value map. Products and services are what you offer. They can be physical, digital, intangible or financial.", "show": "card0"},
+        {"say": "Pain relievers describe how you eliminate or reduce specific pains.", "show": "card1"},
+        {"say": "Gain creators describe how you produce the benefits customers want.", "show": "card2"},
+        {"say": "The rule: everything on the left must map to something on the right. If a feature does not address a job, a pain or a gain, ask why it is there.", "show": "banner"}
+      ]
+    },
+    {
+      "type": "steps",
+      "label": "Fit",
+      "title": "Three levels of fit",
+      "steps": [
+        {"tag": "On paper", "title": "Problem–solution fit", "text": "Evidence that customers care about these jobs, pains and gains, and a value proposition that addresses them."},
+        {"tag": "In the market", "title": "Product–market fit", "text": "Evidence that the value proposition creates value and gains traction."},
+        {"tag": "In the bank", "title": "Business model fit", "text": "Evidence that it can be embedded in a profitable, scalable business model."}
+      ],
+      "beats": [
+        {"say": "Fit happens in three stages. First, problem–solution fit, on paper: you have evidence that customers care about these jobs, pains and gains, and you have designed something that addresses them.", "show": "s0"},
+        {"say": "Second, product–market fit, in the market: customers actually use and value what you offer, and it gains traction.", "show": "s1"},
+        {"say": "And third, business model fit, in the bank: the value proposition sits inside a business that is profitable and can scale.", "show": "s2"}
+      ]
+    },
+    {
+      "type": "vpc",
+      "label": "04 · Case",
+      "title": "Adidas × Parley: shoes made from ocean plastic",
+      "items": {
+        "jobs": ["Attractive, functional apparel", "Sport performance"],
+        "gains": ["Quality and comfort", "Exclusive club", "Being fashionable"],
+        "pains": ["Cost", "Uncertain quality of new tech", "Access hassle"],
+        "products": ["Shoes and apparel made with Parley Ocean Plastic"],
+        "gain_creators": ["Badge value", "Ocean-plastic story", "Limited editions"],
+        "pain_relievers": ["Your turn: what would you put here?"]
+      },
+      "beats": [
+        {"say": "Let's read a real case. Adidas and Parley started from an impact they wanted: reduce new plastic and clean up the oceans. Their target was one million pairs of shoes made with ocean plastic in 2017. Then they designed the value proposition.", "show": "shape"},
+        {"say": "Read it from the customer side first. The job: apparel and shoes that look good and perform in sport.", "show": "jobs"},
+        {"say": "The gains: quality, comfort, being fashionable, belonging to an exclusive club.", "show": "gains"},
+        {"say": "The pains: cost, doubts about the quality of a new material, and the hassle of finding the product.", "show": "pains"},
+        {"say": "On the left: the product, and gain creators like badge value, the ocean-plastic story and limited editions.", "show": ["products", "gain_creators"]},
+        {"say": "Now pause the video. Which pain relievers would you design for those three pains?", "show": ["pain_relievers", "fit"]}
+      ]
+    },
+    {
+      "type": "steps",
+      "label": "05 · From interviews to canvas",
+      "title": "How SMARTIVE built its canvas for wind-farm managers",
+      "steps": [
+        {"tag": "Step 1", "title": "Interview and tabulate", "text": "Interview wind-farm and maintenance managers; put every answer in a table."},
+        {"tag": "Step 2", "title": "Synthesise", "text": "Cluster jobs, pains and gains on a whiteboard and rank them."},
+        {"tag": "Step 3", "title": "Design the fit", "text": "Build the value map against the final customer profile."}
+      ],
+      "banner": "Put numbers on it: “+3% production”, lower OPEX, automatic reporting. Quantified gains are testable gains.",
+      "beats": [
+        {"say": "How do you build a real canvas? Here is how SMARTIVE did it. Step one: interview wind-farm managers and maintenance managers, and tabulate every answer.", "show": "s0"},
+        {"say": "Step two: synthesise on a whiteboard. Cluster the jobs, pains and gains, and rank them.", "show": "s1"},
+        {"say": "Step three: design the value map against that final customer profile.", "show": "s2"},
+        {"say": "And put numbers on it: three percent more production, lower operating costs, automatic reporting. A gain with a number is a gain you can test.", "show": "banner"}
+      ]
+    },
+    {
+      "type": "statement",
+      "label": "Takeaway",
+      "text": "Customer first. Then design for fit.",
+      "sub": "Jobs, pains and gains come from interviews, not opinions. Quantify them so you can test them.\nNext session: Testing Business Ideas and Agile.",
+      "beats": [
+        {"say": "To sum up. The Value Proposition Canvas zooms into two blocks of the business model. Start with the customer, then design for fit."},
+        {"say": "Jobs, pains and gains come from interviews, not from opinions. Every element of your offer should map to one of them. And quantify them, so you can test them. That is exactly what we do in the next session: Testing Business Ideas, and organising the work with Agile.", "show": "sub"}
+      ]
+    }
+  ]
+}

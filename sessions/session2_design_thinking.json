@@ -1,0 +1,228 @@
+{
+  "meta": {
+    "session": "Session 2 · Design Thinking",
+    "course": "Designing Innovative Products & Business",
+    "author": "Jordi Cusidó Roura",
+    "output": "Session2_Design_Thinking.mp4",
+    "tts": "edge",
+    "voice": "en-GB-RyanNeural",
+    "rate": "+0%"
+  },
+  "scenes": [
+    {
+      "type": "title",
+      "label": "Session 2",
+      "title": "Design Thinking",
+      "subtitle": "Innovating from real human needs: empathize, define, ideate, prototype and test",
+      "beats": [
+        {"say": "Welcome to session two. Today we learn Design Thinking: a way to innovate that starts from real human needs, not from technology."}
+      ]
+    },
+    {
+      "type": "cards",
+      "label": "01 · Why products fail",
+      "title": "Iridium: a brilliant idea born from a holiday complaint",
+      "cards": [
+        {"tag": "1985", "title": "The spark", "text": "A Motorola engineer's wife cannot use her mobile phone on holiday in the Caribbean."},
+        {"title": "The vision", "text": "Effortless communication from and to any corner of the Earth."},
+        {"title": "The product", "text": "A constellation of satellites giving mobile coverage anywhere on the planet."}
+      ],
+      "beats": [
+        {"say": "Let's start with a famous failure. In 1985, the wife of a Motorola engineer complains that she cannot use her mobile phone while on holiday in the Caribbean.", "show": "card0"},
+        {"say": "From that complaint comes a huge vision: effortless communication from and to any corner of the Earth.", "show": "card1"},
+        {"say": "And a spectacular product: Iridium, a constellation of satellites giving mobile coverage anywhere on the planet. Brilliant engineering. So what went wrong?", "show": "card2"}
+      ]
+    },
+    {
+      "type": "stats",
+      "label": "The Iridium case",
+      "title": "The market had already moved on",
+      "stats": [
+        {"value": "1,000k", "label": "subscribers Iridium needed to break even"},
+        {"value": "≈20k", "label": "subscribers Iridium actually had in August 1999"},
+        {"value": "480M", "label": "GSM mobile subscribers by January 2000, up from 1.3 million in 1994", "highlight": true}
+      ],
+      "banner": "Same technology, different users: Iridium found a second life with ships, planes and remote sites with no network at all.",
+      "beats": [
+        {"say": "Iridium needed about one million subscribers to break even.", "show": "st0"},
+        {"say": "In August 1999 it had around twenty thousand.", "show": "st1"},
+        {"say": "Meanwhile, ordinary GSM mobile networks had grown from one point three million subscribers in 1994 to four hundred and eighty million by 2000. Most people simply did not need a satellite phone.", "show": "st2"},
+        {"say": "Iridium went bankrupt in 1999. Later, it found a second life with the users who really need it: ships, planes and remote sites with no network at all.", "show": "banner"}
+      ]
+    },
+    {
+      "type": "statement",
+      "label": "Product development",
+      "text": "Beware of the “cute baby” syndrome.",
+      "sub": "Everyone loves their own idea. The later you discover a mistake, the more it costs to fix. Ask before you build: who needs this, and how do we know?",
+      "beats": [
+        {"say": "Engineers call this the cute baby syndrome. Everyone thinks their own baby is beautiful, and every team loves its own idea."},
+        {"say": "But the later you discover a mistake, the more expensive it is to fix. So ask before you build: who needs this, and how do we know?", "show": "sub"}
+      ]
+    },
+    {
+      "type": "cards",
+      "label": "02 · Principles",
+      "title": "Three principles behind Design Thinking",
+      "cards": [
+        {"title": "Empathy", "text": "Design based on a deep understanding of people."},
+        {"title": "Expansive thinking", "text": "Go wide before going deep: many options first."},
+        {"title": "Experimentation", "text": "Build quick prototypes and learn from real reactions."}
+      ],
+      "banner": "P&G put design thinking in its DNA under A.G. Lafley: sales grew from $40B to $83.5B between 2000 and 2008.",
+      "beats": [
+        {"say": "Design Thinking rests on three principles. Empathy: design from a deep understanding of people.", "show": "card0"},
+        {"say": "Expansive thinking: go wide before going deep, and explore many options before choosing one.", "show": "card1"},
+        {"say": "And experimentation: build quick prototypes and learn from how people really react.", "show": "card2"},
+        {"say": "It is not only for start-ups. Procter and Gamble put customer-centred design into its culture under A.G. Lafley, and its sales grew from forty to over eighty billion dollars in eight years.", "show": "banner"}
+      ]
+    },
+    {
+      "type": "steps",
+      "label": "The process",
+      "title": "The Stanford d.school process",
+      "steps": [
+        {"title": "Empathize", "text": "Interviews, shadowing: seek to understand."},
+        {"title": "Define", "text": "Personas, pain points: frame the right problem."},
+        {"title": "Ideate", "text": "All ideas are worthy: diverge, then converge."},
+        {"title": "Prototype", "text": "Mock-ups and storyboards: fail fast."},
+        {"title": "Test", "text": "What works? Role-play and iterate quickly."}
+      ],
+      "beats": [
+        {"say": "The best-known process comes from the Stanford d.school, and it has five steps. Empathize: interview and observe people to understand them.", "show": "s0"},
+        {"say": "Define: turn what you learned into a clear problem worth solving.", "show": "s1"},
+        {"say": "Ideate: generate many ideas, then converge.", "show": "s2"},
+        {"say": "Prototype: make ideas tangible, quickly and cheaply.", "show": "s3"},
+        {"say": "And test: put prototypes in front of people, learn, and iterate. Let's go through them one by one.", "show": "s4"}
+      ]
+    },
+    {
+      "type": "list",
+      "label": "03 · Empathize",
+      "title": "Ten rules for a great interview",
+      "items": [
+        {"title": "Ask why", "text": "Even when you think you know."},
+        {"title": "Never say “usually”", "text": "Ask for the last specific time."},
+        {"title": "Encourage stories", "text": "They reveal how people think."},
+        {"title": "Look for inconsistencies", "text": "What people say vs. what they do."},
+        {"title": "Watch non-verbal cues", "text": "Body language and emotion."},
+        {"title": "Embrace silence", "text": "Let people reflect deeper."},
+        {"title": "Don't suggest answers", "text": "Avoid leading them."},
+        {"title": "Ask neutrally", "text": "No “right” answer implied."},
+        {"title": "No binary questions", "text": "Host a conversation, not a survey."},
+        {"title": "Capture everything", "text": "Work in pairs or record."}
+      ],
+      "beats": [
+        {"say": "Empathy starts with interviews. Talk to a small number of people, five to ten, in depth. Include extreme users: they amplify needs that everyone has. And forget questionnaires: you want stories."},
+        {"say": "Ask why, even when you think you know. Never ask what people usually do: ask about the last specific time. Encourage stories. Look for inconsistencies between what people say and what they do. And watch their body language.", "show": ["i0", "i1", "i2", "i3", "i4"]},
+        {"say": "Embrace silence: it lets people go deeper. Don't suggest answers, and ask neutrally. Avoid yes or no questions. And capture everything: work in pairs, or record.", "show": ["i5", "i6", "i7", "i8", "i9"]}
+      ]
+    },
+    {
+      "type": "quad",
+      "label": "04 · Define",
+      "title": "Empathy map: says, thinks, does, feels",
+      "center": "Your user",
+      "quads": [
+        {"title": "Says", "text": "Quotes and the exact words they use."},
+        {"title": "Thinks", "text": "Beliefs and worries they may not say out loud."},
+        {"title": "Does", "text": "Actions and behaviours you observed."},
+        {"title": "Feels", "text": "Emotions: frustration, pride, anxiety, relief."}
+      ],
+      "banner": "Insights hide in the contradictions, for example between what people say and what they do.",
+      "beats": [
+        {"say": "Now, define. First organise what you heard in an empathy map, with your user in the centre."},
+        {"say": "What does the user say? Write their exact words.", "show": "q0"},
+        {"say": "What do they think, even if they don't say it?", "show": "q1"},
+        {"say": "What do they actually do?", "show": "q2"},
+        {"say": "And what do they feel?", "show": "q3"},
+        {"say": "Use one sticky note per observation, cluster them, and look for contradictions. That is where the insights are. Personas and customer journey maps help you go further: one gives your user a face and a name, the other shows each step and emotion along the way.", "show": "banner"}
+      ]
+    },
+    {
+      "type": "template",
+      "label": "Define",
+      "title": "Point of view: frame the right problem",
+      "cards": [
+        {"head": "Point of view", "rows": [
+          {"lead": "User", "fill": "A specific person, not a demographic."},
+          {"lead": "Needs a way to", "fill": "A verb, not a solution."},
+          {"lead": "Because", "fill": "A surprising insight from your research."}
+        ]}
+      ],
+      "example": "A student who studies abroad needs a way to take part in family celebrations, because for her the gift matters less than being part of the moment.",
+      "example_label": "EXAMPLE (ILLUSTRATIVE)",
+      "beats": [
+        {"say": "Then take a stand with a point of view: one sentence that frames the problem. It has three parts. A specific user. A need, written as a verb, never as a solution. And a surprising insight that explains why.", "show": "card0"},
+        {"say": "For example: a student who studies abroad needs a way to take part in family celebrations, because for her the gift matters less than being part of the moment. Different points of view open completely different design spaces.", "show": "example"}
+      ]
+    },
+    {
+      "type": "list",
+      "label": "05 · Ideate",
+      "title": "Seven rules for brainstorming",
+      "style": "check",
+      "items": [
+        {"title": "Defer judgement"},
+        {"title": "Encourage wild ideas"},
+        {"title": "Build on the ideas of others"},
+        {"title": "Stay on topic"},
+        {"title": "One conversation at a time"},
+        {"title": "Be visual"},
+        {"title": "Go for quantity"}
+      ],
+      "beats": [
+        {"say": "Now, ideate. Make ideas visible: doodling and sketching are ways of thinking, and anyone can draw an idea. When you brainstorm as a team, follow seven rules."},
+        {"say": "Defer judgement. Encourage wild ideas. Build on the ideas of others. Stay on topic.", "show": ["i0", "i1", "i2", "i3"]},
+        {"say": "Hold one conversation at a time. Be visual. And go for quantity: the good ideas usually come after the obvious ones.", "show": ["i4", "i5", "i6"]}
+      ]
+    },
+    {
+      "type": "cards",
+      "label": "06 · Prototype",
+      "title": "Build to think: the prototype is a question",
+      "cards": [
+        {"title": "Make it tangible", "text": "A prototype is worth a thousand meetings."},
+        {"title": "Cheap and fast", "text": "Paper, cardboard, sticky notes before screens."},
+        {"title": "Let them interact", "text": "Don't explain it: hand it over."},
+        {"title": "Fail early", "text": "To succeed sooner."}
+      ],
+      "beats": [
+        {"say": "If a picture is worth a thousand words, a prototype is worth a thousand meetings. A prototype is a question made tangible.", "show": "card0"},
+        {"say": "Keep it cheap and fast: paper, cardboard and sticky notes come before screens.", "show": "card1"},
+        {"say": "Don't explain it. Hand it over and let people interact with it.", "show": "card2"},
+        {"say": "And fail early, so you can succeed sooner.", "show": "card3"}
+      ]
+    },
+    {
+      "type": "quad",
+      "label": "07 · Test",
+      "title": "Test to learn: the feedback capture grid",
+      "quads": [
+        {"tag": "+", "title": "Likes", "text": "What they liked the most."},
+        {"tag": "Δ", "title": "Criticisms", "text": "What could be improved."},
+        {"tag": "?", "title": "Questions", "text": "What they did not understand."},
+        {"tag": "!", "title": "Ideas", "text": "New ideas to consider."}
+      ],
+      "banner": "Show, don't tell. Observe where they hesitate. Capture. Then refine the point of view or the solution, and test again.",
+      "beats": [
+        {"say": "When you test, show, don't tell. Watch what people do and where they hesitate. And capture the feedback in four boxes."},
+        {"say": "What did they like?", "show": "q0"},
+        {"say": "What would they improve?", "show": "q1"},
+        {"say": "What questions did they have?", "show": "q2"},
+        {"say": "And which new ideas came up?", "show": "q3"},
+        {"say": "Then iterate: refine your point of view or your solution, and test again.", "show": "banner"}
+      ]
+    },
+    {
+      "type": "statement",
+      "label": "Takeaway",
+      "text": "Technology is not the same as need.",
+      "sub": "Empathy is a method. Frame before you solve. Build to learn.\nNext session: Business Model Canvas and Lean Startup.",
+      "beats": [
+        {"say": "To sum up. Iridium had brilliant technology and the wrong users. Technology is not the same as need."},
+        {"say": "Empathy is a method, not a feeling. Frame the problem before you solve it. And build cheap prototypes to learn, instead of debating. In the next session we will see how to turn a validated need into a business: the Business Model Canvas and Lean Startup.", "show": "sub"}
+      ]
+    }
+  ]
+}

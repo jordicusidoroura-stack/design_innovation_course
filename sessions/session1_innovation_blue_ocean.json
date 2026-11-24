@@ -1,0 +1,266 @@
+{
+  "meta": {
+    "session": "Session 1 · Innovation, Blue Ocean & Open Innovation",
+    "course": "Designing Innovative Products & Business",
+    "author": "Jordi Cusidó Roura",
+    "output": "Session1_Innovation_Blue_Ocean.mp4",
+    "tts": "edge",
+    "voice": "en-GB-RyanNeural",
+    "rate": "+0%"
+  },
+  "scenes": [
+    {
+      "type": "title",
+      "label": "Session 1",
+      "title": "Innovation, Blue Ocean and Open Innovation",
+      "subtitle": "What innovation really is, how to escape the competition, and why nobody innovates alone",
+      "beats": [
+        {"say": "Welcome to the course. In this first session we will answer three questions. What is innovation, really? How do you escape a market full of competitors? And why do the best companies no longer innovate alone?"}
+      ]
+    },
+    {
+      "type": "cards",
+      "label": "01 · A story",
+      "title": "Who invented the telephone?",
+      "cards": [
+        {"tag": "1871", "title": "Antonio Meucci", "text": "An Italian immigrant in New York with a working voice device years earlier. He filed a provisional notice, then could not afford to renew it."},
+        {"tag": "1876", "title": "Alexander Graham Bell", "text": "Filed his patent, built a company around it and took the telephone to the world."}
+      ],
+      "banner": "An invention is not an innovation. Innovation is an invention that reaches people and creates value.",
+      "beats": [
+        {"say": "Let's start with a story. Who invented the telephone? Most people would say Alexander Graham Bell."},
+        {"say": "But Antonio Meucci, an Italian immigrant in New York, had a working voice device years earlier. In 1871 he filed a provisional notice of his invention. A few years later, he could no longer afford the ten dollars to renew it.", "show": "card0"},
+        {"say": "In 1876, Bell filed his patent, built a company around it, and brought the telephone to the world.", "show": "card1"},
+        {"say": "In 2002 the United States House of Representatives recognised Meucci's work. But history remembers Bell. The lesson is simple: an invention is not an innovation. Innovation is an invention that reaches people and creates value.", "show": "banner"}
+      ]
+    },
+    {
+      "type": "cards",
+      "label": "02 · What is innovation?",
+      "title": "New combinations that create value",
+      "cards": [
+        {"title": "Not just invention", "text": "An idea becomes innovation only when people adopt it and value is captured."},
+        {"title": "Not just small improvements", "text": "Incremental improvement is part of being a dynamic organisation. Innovation finds new ways of combining things."},
+        {"title": "The lasting advantage", "text": "Cheap labour and economies of scale can be copied. The ability to innovate is much harder to copy."}
+      ],
+      "beats": [
+        {"say": "So what is innovation? First, it is not just invention. An idea becomes innovation only when people adopt it and someone captures value from it.", "show": "card0"},
+        {"say": "Second, it is not just small improvements. Improving every year is simply part of being a healthy organisation. Innovation means finding new ways of combining things: technologies, business models, markets.", "show": "card1"},
+        {"say": "And third, it is the advantage that lasts. Cheap labour or economies of scale can be copied. A real capacity to innovate is much harder to copy.", "show": "card2"}
+      ]
+    },
+    {
+      "type": "quad",
+      "label": "Types of innovation",
+      "title": "Four types of innovation",
+      "y_axis": "How well is the problem defined?",
+      "x_axis": "How well is the domain defined?",
+      "highlight": 3,
+      "quads": [
+        {"title": "Breakthrough", "text": "Mavericks, skunk works, open innovation and prizes."},
+        {"title": "Sustaining", "text": "Roadmaps, R&D labs, design thinking, acquisitions."},
+        {"title": "Basic research", "text": "Research divisions, academic partnerships, journals and conferences."},
+        {"title": "Disruptive", "text": "The venture-capital model, innovation labs, 15–20% time rules, lean launchpads."}
+      ],
+      "beats": [
+        {"say": "Not all innovation is the same. Greg Satell, in Harvard Business Review, proposes a simple map with two questions: how well do you understand the problem, and how well do you understand the domain where the solution lives?"},
+        {"say": "When both are clear, you are doing sustaining innovation: making existing products better, with roadmaps and R&D labs.", "show": "q1"},
+        {"say": "When the problem is clear but the domain is not, you need breakthrough innovation: mavericks, skunk works, open innovation and prizes.", "show": "q0"},
+        {"say": "When neither is clear, you are in basic research: research divisions and partnerships with universities.", "show": "q2"},
+        {"say": "And when the domain is known but the problem is not, you are in disruptive territory. Here the tools are the venture-capital model, innovation labs, and lean methods. That is the territory of this course.", "show": "q3"}
+      ]
+    },
+    {
+      "type": "statement",
+      "label": "Disruptive innovation",
+      "text": "You can get better and better at things people want less and less.",
+      "sub": "When the basis of competition changes, a better product is not enough: you have to innovate the business model. (After Clayton Christensen)",
+      "beats": [
+        {"say": "Clayton Christensen discovered something uncomfortable. When technology or the market shifts, successful companies can keep getting better at things people want less and less."},
+        {"say": "When that happens, improving the product will not save you. You have to innovate the business model.", "show": "sub"}
+      ]
+    },
+    {
+      "type": "steps",
+      "label": "Disruption in action",
+      "title": "How we pay for music: six business models in a century",
+      "steps": [
+        {"tag": "1890s", "title": "Vinyl", "text": "Buy a physical record."},
+        {"tag": "1963", "title": "Cassette", "text": "Portable and recordable."},
+        {"tag": "1982", "title": "Compact disc", "text": "Digital sound, still a physical object."},
+        {"tag": "1999", "title": "Napster", "text": "Free file sharing: the industry loses control."},
+        {"tag": "2003", "title": "iTunes Store", "text": "Pay 99 cents per song."},
+        {"tag": "2008", "title": "Spotify", "text": "Pay for access, not ownership."}
+      ],
+      "banner": "Same story in film: Netflix moved from mailing DVDs to streaming. Blockbuster went bankrupt in 2010.",
+      "beats": [
+        {"say": "Look at music. For most of a century the business model was the same: you bought a physical object.", "show": ["s0", "s1", "s2"]},
+        {"say": "Then Napster made music free to share, and the industry lost control. Apple answered by selling songs for 99 cents. And Spotify changed the question completely: you no longer pay to own music, you pay for access.", "show": ["s3", "s4", "s5"]},
+        {"say": "Film followed the same path. Netflix moved from mailing DVDs to streaming, and Blockbuster, the market leader, went bankrupt in 2010.", "show": "banner"}
+      ]
+    },
+    {
+      "type": "list",
+      "label": "03 · Managing innovation",
+      "title": "Methods built for uncertainty: this course",
+      "items": [
+        {"title": "Blue Ocean & Open Innovation", "text": "Session 1 · Where is the opportunity?"},
+        {"title": "Design Thinking", "text": "Session 2 · What do people really need?"},
+        {"title": "Business Model Canvas & Lean Startup", "text": "Session 3 · How does it make money?"},
+        {"title": "Value Proposition Design", "text": "Session 4 · Why would they choose us?"},
+        {"title": "Testing Business Ideas & Agile", "text": "Session 5 · Is it true, and how do we work?"},
+        {"title": "From Innovation to Scalable Value", "text": "Session 6 · How does it become a real asset?"}
+      ],
+      "beats": [
+        {"say": "How do we manage something as uncertain as innovation? The classic management tools, like the business plan, the SWOT analysis or Porter's five forces, assume that you already know the market."},
+        {"say": "Since 2000, a new family of methods has appeared, designed for uncertainty. This course follows them in order. Today, Blue Ocean and open innovation. Then Design Thinking. Then the Business Model Canvas and Lean Startup.", "show": ["i0", "i1", "i2"]},
+        {"say": "After that, Value Proposition Design, testing business ideas with agile teams, and finally, how innovation becomes a scalable asset.", "show": ["i3", "i4", "i5"]}
+      ]
+    },
+    {
+      "type": "table",
+      "label": "04 · Blue Ocean Strategy",
+      "title": "Red oceans and blue oceans",
+      "headers": ["", "Red ocean", "Blue ocean"],
+      "rows": [
+        ["Market", "Existing market space, known boundaries", "Uncontested market space"],
+        ["Goal", "Beat the competition", "Make the competition irrelevant"],
+        ["Demand", "Fight for a bigger share of existing demand", "Create and capture new demand"],
+        ["Trade-off", "Choose between more value or lower cost", "Break the trade-off: more value and lower cost"]
+      ],
+      "beats": [
+        {"say": "Now, Blue Ocean Strategy, by Kim and Mauborgne, published in 2004. They describe two kinds of market."},
+        {"say": "Red oceans are the industries that exist today. Boundaries are known, and companies fight for a bigger share of the same market, until the water turns red.", "show": "r0"},
+        {"say": "In a blue ocean, the goal is not to beat the competition, but to make it irrelevant, by creating demand that did not exist before.", "show": ["r1", "r2"]},
+        {"say": "And the key move: instead of choosing between more value or lower cost, blue ocean strategies achieve both at the same time.", "show": "r3"}
+      ]
+    },
+    {
+      "type": "strategy",
+      "label": "Blue Ocean · Tool 1",
+      "title": "Strategy canvas: see how an industry competes",
+      "factors": ["Price", "Star performers", "Animal shows", "Aisle concessions", "Multiple show arenas", "Fun and humour", "Thrill and danger", "Unique venue", "Theme", "Refined setting", "Multiple productions", "Artistic music and dance"],
+      "max": 5,
+      "curves": [
+        {"name": "Traditional circus", "color": "ink", "values": [3, 4, 4.5, 4, 4, 4, 4.5, 1.5, 0.3, 0.3, 0.3, 1]},
+        {"name": "Cirque du Soleil", "color": "amber", "values": [4.3, 0.3, 0.3, 0.3, 0.3, 2.3, 2.3, 4.5, 4.2, 4.3, 3.8, 4.2]}
+      ],
+      "note": "Illustrative, based on Kim and Mauborgne, Blue Ocean Strategy.",
+      "beats": [
+        {"say": "The first tool is the strategy canvas. On the horizontal axis, list the factors an industry competes on. On the vertical axis, how much of each one customers receive."},
+        {"say": "Here is the classic example, the circus. Traditional circuses competed on star performers, animal shows, concessions, several rings, thrills and danger. Every company offered more of the same.", "show": "curve0"},
+        {"say": "Cirque du Soleil drew a completely different curve. It dropped most of what circuses competed on, and borrowed new factors from theatre: a theme, a refined setting, artistic music and dance. It could charge theatre prices, without paying circus costs.", "show": "curve1"}
+      ]
+    },
+    {
+      "type": "errc",
+      "label": "Blue Ocean · Tool 2",
+      "title": "ERRC grid: Cirque du Soleil",
+      "quads": [
+        {"question": "What does the industry take for granted that we can drop?", "items": ["Star performers", "Animal shows", "Aisle concessions", "Multiple show arenas"]},
+        {"question": "What can go well below the standard?", "items": ["Fun and humour", "Thrill and danger"]},
+        {"question": "What should go well above the standard?", "items": ["Unique venue"]},
+        {"question": "What has the industry never offered?", "items": ["Theme", "Refined setting", "Multiple productions", "Artistic music and dance"]}
+      ],
+      "beats": [
+        {"say": "The second tool, the ERRC grid, turns the new curve into four decisions."},
+        {"say": "Eliminate: which factors that the industry takes for granted can you drop? Cirque dropped animals and star performers, the most expensive parts of a circus.", "show": "q0"},
+        {"say": "Reduce: which factors can go well below the standard?", "show": "q1"},
+        {"say": "Raise: which should go well above it?", "show": "q2"},
+        {"say": "And create: what can you offer that the industry has never offered?", "show": "q3"}
+      ]
+    },
+    {
+      "type": "strategy",
+      "label": "Case · SMARTIVE",
+      "title": "SMARTIVE: a new value curve for wind-farm data",
+      "factors": ["Platform", "Licence cost", "Control", "Set-up time", "IIoT", "SaaS", "Multi-tech", "Work orders", "Statistical analysis", "Machine learning", "Deep learning", "Text mining"],
+      "max": 5,
+      "curves": [
+        {"name": "Premium SCADA platforms", "color": "ink", "values": [4.2, 3.3, 4.2, 4.2, 4.2, 1.7, 3.7, 2.1, 2.9, 1.7, 0.1, 0.1]},
+        {"name": "SmartCast services", "color": "amber", "values": [0.1, 0.1, 0.1, 0.8, 2.1, 3.3, 4.2, 4.2, 4.2, 4.2, 4.2, 4.2]}
+      ],
+      "note": "Simplified from SMARTIVE's strategy canvas.",
+      "beats": [
+        {"say": "Now a real case. SMARTIVE builds digital platforms to monitor and diagnose wind turbines. Its first product added every feature that competing platforms had. It looked impressive, but customers did not really understand what made it different."},
+        {"say": "So the team mapped how the market actually competes: the platform, licence cost, control functions, set-up time, industrial internet of things, and so on. Premium SCADA platforms score high on platform, licences and control.", "show": "curve0"},
+        {"say": "SmartCast services took a different path. No platform to install, no licence, no control functions. Instead, much more analysis, from statistics to machine learning, deep learning and text mining, all sold as a service.", "show": "curve1"}
+      ]
+    },
+    {
+      "type": "errc",
+      "label": "Case · SMARTIVE",
+      "title": "ERRC grid: SMARTIVE",
+      "quads": [
+        {"question": "Drop", "items": ["Platform", "Licence cost", "Control"]},
+        {"question": "Below the standard", "items": ["Set-up time", "IIoT"]},
+        {"question": "Above the standard", "items": ["SaaS", "Multi-technology", "Work orders", "Statistics and machine learning"]},
+        {"question": "Never offered", "items": ["Deep learning", "Text mining"]}
+      ],
+      "banner": "Same data, a different value curve: from selling a product to selling a diagnosis.",
+      "beats": [
+        {"say": "Here is the same decision in an ERRC grid. Eliminate the platform, the licence and the control functions.", "show": "q0"},
+        {"say": "Reduce set-up time and the hardware side of the internet of things.", "show": "q1"},
+        {"say": "Raise software as a service, support for many technologies, work orders and analytics.", "show": "q2"},
+        {"say": "And create something no competitor offered: deep learning and text mining on maintenance data.", "show": "q3"},
+        {"say": "The same data, with a different value curve. SMARTIVE moved from selling a product to selling a diagnosis.", "show": "banner"}
+      ]
+    },
+    {
+      "type": "statement",
+      "label": "05 · Open innovation",
+      "text": "Let knowledge in, and let ideas out.",
+      "sub": "Henry Chesbrough, 2003: bring outside knowledge in to accelerate your own innovation, and take unused ideas out to new markets.",
+      "beats": [
+        {"say": "The last idea of today: open innovation."},
+        {"say": "Henry Chesbrough defined it in 2003. Bring knowledge from outside in, to accelerate your own innovation. And let your unused ideas go out, to create value in other markets.", "show": "sub"}
+      ]
+    },
+    {
+      "type": "table",
+      "label": "Open innovation",
+      "title": "Closed and open innovation",
+      "headers": ["", "Closed innovation", "Open innovation"],
+      "rows": [
+        ["Ideas", "Come only from our own R&D", "Come from inside and outside: start-ups, universities, customers"],
+        ["Path to market", "Only through our own products", "Also through licences, partners and spin-offs"],
+        ["Unused IP", "Stays on the shelf", "Is licensed or sold"],
+        ["Risk", "Carried alone", "Shared across an ecosystem"]
+      ],
+      "beats": [
+        {"say": "In closed innovation, every idea comes from your own R&D, and the only way to market is through your own products."},
+        {"say": "In open innovation, ideas come from inside and outside: start-ups, universities, customers. And they can reach the market through licences, partners or spin-offs.", "show": ["r0", "r1"]},
+        {"say": "Patents that would stay on the shelf are licensed or sold. And the risk is shared across an ecosystem, instead of carried alone.", "show": ["r2", "r3"]}
+      ]
+    },
+    {
+      "type": "cards",
+      "label": "Open innovation",
+      "title": "Why it pays, and who does it",
+      "cards": [
+        {"title": "R&D paid by others", "text": "Leverage research developed on someone else's budget."},
+        {"title": "Better return on IP", "text": "License or sell technology you would never use yourself."},
+        {"title": "ACCIONA I'MNOVATION", "text": "Scouts start-ups and funds pilots to validate them in real settings."},
+        {"title": "Microsoft AI Factory", "text": "With Schneider Electric: a 3-month accelerator for AI in green energy."}
+      ],
+      "banner": "Open innovation 2.0: innovating inside an ecosystem of industry, universities, government and society.",
+      "beats": [
+        {"say": "Why does it pay? You can leverage research paid for by someone else.", "show": "card0"},
+        {"say": "And you get a better return on your own intellectual property, by licensing technology you would never use yourself.", "show": "card1"},
+        {"say": "Large companies do it every day. ACCIONA's I'MNOVATION programme scouts start-ups and funds pilots to validate them in real settings.", "show": "card2"},
+        {"say": "Microsoft's AI Factory, with Schneider Electric, ran a three-month accelerator for start-ups applying artificial intelligence to green energy.", "show": "card3"},
+        {"say": "Today we talk about open innovation 2.0: innovating inside an ecosystem where industry, universities, government and society work together.", "show": "banner"}
+      ]
+    },
+    {
+      "type": "statement",
+      "label": "Takeaway",
+      "text": "Innovation is an invention that reaches people.",
+      "sub": "Look for blue oceans with the strategy canvas and the ERRC grid, and don't innovate alone.\nNext session: Design Thinking.",
+      "beats": [
+        {"say": "To sum up. Innovation is an invention that reaches people and creates value."},
+        {"say": "To find it, look for blue oceans with the strategy canvas and the ERRC grid, and don't innovate alone. In the next session, we will start where every innovation should start: with people and their real needs. Design Thinking.", "show": "sub"}
+      ]
+    }
+  ]
+}

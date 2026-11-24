@@ -1,0 +1,6 @@
+build/
+previews/
+tts_cache/
+*.mp4
+__pycache__/
+*.pyc

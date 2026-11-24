@@ -1,0 +1,247 @@
+{
+  "meta": {
+    "session": "Session 6 · From Innovation to Scalable Value",
+    "course": "Designing Innovative Products & Business",
+    "author": "Jordi Cusidó Roura",
+    "output": "Session6_Innovation_to_Scalable_Value.mp4",
+    "tts": "edge",
+    "voice": "en-GB-RyanNeural",
+    "rate": "+0%"
+  },
+  "scenes": [
+    {
+      "type": "title",
+      "label": "Session 6",
+      "title": "From Innovation to Scalable Value",
+      "subtitle": "What we learned, how ideas become real assets, and how to win Demo Day",
+      "beats": [
+        {"say": "Welcome to the final session. We will look back at the whole journey, see how an idea becomes a real, scalable asset, and prepare for Demo Day."}
+      ]
+    },
+    {
+      "type": "steps",
+      "label": "01 · The journey so far",
+      "title": "Five sessions, five questions",
+      "steps": [
+        {"tag": "Session 1", "title": "Where is the opportunity?", "text": "Blue Ocean, open innovation."},
+        {"tag": "Session 2", "title": "What do people really need?", "text": "Design Thinking."},
+        {"tag": "Session 3", "title": "How does it make money?", "text": "Business Model Canvas, Lean Startup."},
+        {"tag": "Session 4", "title": "Why would they choose us?", "text": "Value Proposition Design."},
+        {"tag": "Session 5", "title": "Is it true, and how do we work?", "text": "Testing ideas, Agile."}
+      ],
+      "beats": [
+        {"say": "Every session answered one question about a new idea. Where is the opportunity? We used Blue Ocean and open innovation.", "show": "s0"},
+        {"say": "What do people really need? Design Thinking.", "show": "s1"},
+        {"say": "How does it make money? The Business Model Canvas and Lean Startup.", "show": "s2"},
+        {"say": "Why would customers choose us? Value Proposition Design.", "show": "s3"},
+        {"say": "And is it true, and how do we organise the work? Testing business ideas, and Agile.", "show": "s4"}
+      ]
+    },
+    {
+      "type": "list",
+      "label": "Toolkit",
+      "title": "Which tool, when?",
+      "items": [
+        {"title": "Strategy canvas & ERRC", "text": "To escape competition."},
+        {"title": "Interviews & empathy map", "text": "To understand users before designing."},
+        {"title": "Point of view", "text": "To frame the right problem."},
+        {"title": "Business Model Canvas", "text": "To see the whole business on one page."},
+        {"title": "Value Proposition Canvas", "text": "To design fit with one segment."},
+        {"title": "Test & learning cards", "text": "To turn assumptions into evidence."},
+        {"title": "MVP", "text": "To learn from real behaviour, fast."},
+        {"title": "Scrum & design sprint", "text": "To organise the team around learning."}
+      ],
+      "beats": [
+        {"say": "Here is your toolkit, and when to use each tool. The strategy canvas and ERRC grid, to escape the competition. Interviews and empathy maps, to understand users. The point of view, to frame the right problem. The Business Model Canvas, to see the whole business on one page.", "show": ["i0", "i1", "i2", "i3"]},
+        {"say": "The Value Proposition Canvas, to design fit with one segment. Test and learning cards, to turn assumptions into evidence. The MVP, to learn from real behaviour. And Scrum and design sprints, to organise the team around learning.", "show": ["i4", "i5", "i6", "i7"]}
+      ]
+    },
+    {
+      "type": "stats",
+      "label": "02 · The value engine",
+      "title": "R&D as a profit centre, not a cost (illustrative)",
+      "stats": [
+        {"value": "0.80 M€", "label": "grants"},
+        {"value": "0.50 M€", "label": "soft loans (to repay)"},
+        {"value": "0.35 M€", "label": "R&D tax deductions"},
+        {"value": "0.15 M€", "label": "early pilot revenue"}
+      ],
+      "banner": "1.8 M€ recovered on a 2 M€ R&D budget over four years. Stopping a project at a gate is a success: it saves money for the winners.",
+      "beats": [
+        {"say": "Now, how do ideas become real assets? Consider an illustrative R&D team with a two-million-euro budget over four years. It does not just spend that money. It recovers most of it: eight hundred thousand euros in grants.", "show": "st0"},
+        {"say": "Half a million in soft loans, which must be repaid.", "show": "st1"},
+        {"say": "Three hundred and fifty thousand in R&D tax deductions.", "show": "st2"},
+        {"say": "And a hundred and fifty thousand in early revenue from pilots.", "show": "st3"},
+        {"say": "In total, one point eight million recovered. And notice: stopping a project at a gate is a success of the system, because it saves money for the projects that work.", "show": "banner"}
+      ]
+    },
+    {
+      "type": "table",
+      "label": "Avoid innovation theatre",
+      "title": "Traditional R&D vs the value-engine approach",
+      "headers": ["", "Traditional R&D", "Value-engine approach"],
+      "rows": [
+        ["Funding", "Sunk cost, constant cash burn, balance-sheet risk", "Funding first: public programmes, EU funds and tax credits before operating cash"],
+        ["Scalability", "Isolated proofs of concept that need rebuilding for production", "Scalable from day 0: compliance by design, cloud-native architecture"],
+        ["Tax & IP", "Reactive; patents as an afterthought", "Enablers in every phase; proactive Patent Box"],
+        ["Technology transfer", "Friction with operations; inherited technical debt", "A documented transfer gate with clear accountability"]
+      ],
+      "beats": [
+        {"say": "This is the difference between real innovation and innovation theatre."},
+        {"say": "Traditional R&D burns cash as a sunk cost. A value engine looks for funding first: public programmes, European funds and tax credits, before using operating cash.", "show": "r0"},
+        {"say": "Traditional proofs of concept need to be rebuilt for production. A value engine designs for scale from day zero, with compliance built in.", "show": "r1"},
+        {"say": "Intellectual property is managed proactively, not as an afterthought. And the handover to operations is a documented gate, with clear accountability.", "show": ["r2", "r3"]}
+      ]
+    },
+    {
+      "type": "steps",
+      "label": "Phases and gates",
+      "title": "The value pipeline",
+      "steps": [
+        {"tag": "Phase −2", "title": "Ideation & opportunity", "text": "Real customer needs; scout funding. Gate: strategic fit."},
+        {"tag": "Phase −1", "title": "Proof of concept", "text": "Fast technical validation; grants. Gate: feasibility."},
+        {"tag": "Phase 0", "title": "MVP / pilot", "text": "Validation in a controlled setting. Gate: positive user feedback."},
+        {"tag": "Phase 1", "title": "Pre-product", "text": "Infrastructure, certification (GDPR, AI Act), IP registered."},
+        {"tag": "Phase 2", "title": "Transfer & scale", "text": "Run by IT and business; Patent Box and full sales."}
+      ],
+      "beats": [
+        {"say": "The value pipeline moves each idea through phases, with a gate at the end of each one. Ideation: find real customer needs and scout for funding. The gate checks strategic fit.", "show": "s0"},
+        {"say": "Proof of concept: fast technical validation, often funded by grants. The gate checks feasibility and a scalable architecture.", "show": "s1"},
+        {"say": "MVP or pilot: validation with real users in a controlled setting.", "show": "s2"},
+        {"say": "Pre-product: infrastructure, certification for rules like GDPR and the AI Act, and intellectual property registered.", "show": "s3"},
+        {"say": "And transfer and scale: the product is handed to operations and sold at full scale.", "show": "s4"}
+      ]
+    },
+    {
+      "type": "stats",
+      "label": "Ten-year view",
+      "title": "Why a portfolio beats a single bet (illustrative)",
+      "stats": [
+        {"value": "50 M€", "label": "from 10 high-success projects, about 5 M€ each"},
+        {"value": "30 M€", "label": "from 30 moderate projects, about 1 M€ each"},
+        {"value": "+5 M€", "label": "tax savings from IP regimes"},
+        {"value": "≈85 M€", "label": "on a 10 M€ portfolio over ten years", "highlight": true}
+      ],
+      "banner": "Fund many small, cheap experiments, and let evidence decide which ones scale.",
+      "beats": [
+        {"say": "Over ten years, the logic of a portfolio becomes clear. In this illustrative case, ten projects succeed strongly, at around five million each.", "show": "st0"},
+        {"say": "Thirty succeed moderately, at around one million each.", "show": "st1"},
+        {"say": "Intellectual property regimes add tax savings.", "show": "st2"},
+        {"say": "A ten-million-euro portfolio returns around eighty-five million.", "show": "st3"},
+        {"say": "The lesson: don't bet everything on one idea. Fund many small, cheap experiments, and let the evidence decide which ones scale.", "show": "banner"}
+      ]
+    },
+    {
+      "type": "cards",
+      "label": "03 · Funding, IP & compliance",
+      "title": "Four enablers engineers often forget",
+      "cards": [
+        {"title": "Public funding", "text": "Grants and soft loans from regional, national and EU programmes."},
+        {"title": "R&D tax incentives", "text": "Deductions on R&D spend reduce the real cost of innovation."},
+        {"title": "Intellectual property", "text": "Code registration, trademarks, patents, trade secrets: assets from day 0."},
+        {"title": "Compliance by design", "text": "GDPR, EU AI Act, sector rules, CE marking: design for them, don't retrofit."}
+      ],
+      "beats": [
+        {"say": "Four enablers turn a validated idea into a real product. Public funding: grants and soft loans, the initial fuel.", "show": "card0"},
+        {"say": "R&D tax incentives, which reduce the real cost of innovating.", "show": "card1"},
+        {"say": "Intellectual property: your code, your brand, your patents and your know-how are assets from day zero.", "show": "card2"},
+        {"say": "And compliance by design. Rules like GDPR, the European AI Act or CE marking are much cheaper to design for than to fix later.", "show": "card3"}
+      ]
+    },
+    {
+      "type": "cards",
+      "label": "For your project",
+      "title": "Three questions to add to your Demo Day",
+      "cards": [
+        {"tag": "€", "title": "Who could fund the next step?", "text": "One realistic source of non-dilutive or early funding for your MVP."},
+        {"tag": "©", "title": "What can you protect?", "text": "Your brand, your code, your data, your know-how: name one asset."},
+        {"tag": "§", "title": "Which rule applies to you?", "text": "GDPR, the AI Act, a sector regulation: show you know it exists."}
+      ],
+      "beats": [
+        {"say": "For your own project, add three questions to your Demo Day. Who could fund the next step? Name one realistic source.", "show": "card0"},
+        {"say": "What can you protect? Name at least one asset.", "show": "card1"},
+        {"say": "And which rule applies to you? Show that you know it exists.", "show": "card2"}
+      ]
+    },
+    {
+      "type": "steps",
+      "label": "04 · Demo Day",
+      "title": "A pitch that follows the evidence",
+      "steps": [
+        {"tag": "Mission 1", "title": "Problem"},
+        {"tag": "Mission 2", "title": "Customer"},
+        {"tag": "Session 4", "title": "Value proposition"},
+        {"tag": "Mission 3", "title": "Competition & ERRC"},
+        {"tag": "Mission 4", "title": "MVP & tests"},
+        {"tag": "Session 3", "title": "Business model"},
+        {"tag": "Validation Log", "title": "What we learned & pivots"},
+        {"tag": "Session 6", "title": "The ask & next step"}
+      ],
+      "beats": [
+        {"say": "Demo Day is on the twenty-third of December. Your pitch should follow the evidence you have gathered. Start with the problem, the customer, your value proposition, and your competition, with your ERRC grid.", "show": ["s0", "s1", "s2", "s3"]},
+        {"say": "Then your MVP and the tests you ran, your business model, what you learned and how you pivoted, and finally, your ask and your next step.", "show": ["s4", "s5", "s6", "s7"]}
+      ]
+    },
+    {
+      "type": "quad",
+      "label": "The rubric",
+      "title": "How Demo Day is scored",
+      "quads": [
+        {"title": "Practicality", "text": "A realistic first version buildable in 3 months, with costs estimated."},
+        {"title": "Originality", "text": "A new value curve: clear things you eliminate, reduce, raise and create."},
+        {"title": "Market fit", "text": "A specific segment, a painful problem, a market number and a price someone accepted."},
+        {"title": "Validation", "text": "Hypotheses written before testing, real evidence (not only AI), decisions taken from results."}
+      ],
+      "beats": [
+        {"say": "You will be scored on four criteria. Practicality: a realistic first version you could build in three months, with estimated costs.", "show": "q0"},
+        {"say": "Originality: a new value curve, with clear decisions on what you eliminate, reduce, raise and create.", "show": "q1"},
+        {"say": "Market fit: a specific segment, a painful problem, a market number, and a price that someone accepted.", "show": "q2"},
+        {"say": "And validation: hypotheses written before testing, real evidence, not only answers from an AI, and decisions taken from the results.", "show": "q3"}
+      ]
+    },
+    {
+      "type": "table",
+      "label": "Shark-proof",
+      "title": "Questions the sharks will ask",
+      "headers": ["The sharks ask…", "Answer with…"],
+      "rows": [
+        ["“How do you know they want it?”", "Interviews, sign-ups, pre-orders."],
+        ["“Why won't a big company copy you?”", "Your value curve and your unfair advantage."],
+        ["“How much will it cost to build?”", "Your MVP plan and estimated costs."],
+        ["“Who pays, and how much?”", "A price someone accepted."]
+      ],
+      "beats": [
+        {"say": "Be ready for the questions the sharks will ask."},
+        {"say": "How do you know they want it? Answer with interviews, sign-ups and pre-orders. Why won't a big company copy you? Answer with your value curve and your unfair advantage.", "show": ["r0", "r1"]},
+        {"say": "How much will it cost to build? Answer with your MVP plan. And who pays, and how much? Answer with a price that someone has already accepted.", "show": ["r2", "r3"]}
+      ]
+    },
+    {
+      "type": "cards",
+      "label": "05 · What's next",
+      "title": "Keep the habits, wherever you go",
+      "cards": [
+        {"title": "Talk to customers", "text": "Every week, for any idea, at any job."},
+        {"title": "Test before you build", "text": "Cheap experiments first, big investments later."},
+        {"title": "Use AI critically", "text": "A sparring partner: question it, verify it, decide yourself."},
+        {"title": "Find your ecosystem", "text": "Incubators and programmes at your university and city."}
+      ],
+      "beats": [
+        {"say": "The course ends, but the habits don't have to. Talk to customers, every week, for any idea, in any job.", "show": "card0"},
+        {"say": "Test before you build: cheap experiments first, big investments later.", "show": "card1"},
+        {"say": "Use AI critically, as a sparring partner. Question it, verify it, and decide yourself.", "show": "card2"},
+        {"say": "And find your ecosystem: the incubators and programmes at your university and in your city.", "show": "card3"}
+      ]
+    },
+    {
+      "type": "statement",
+      "label": "Takeaway",
+      "text": "Go build something real.",
+      "sub": "Evidence beats opinion, including your own, and the AI's.\nSee you at Demo Day, 23 December 2026.",
+      "beats": [
+        {"say": "Innovation is a journey: opportunity, need, model, fit, evidence, and then back again. Design to scale from day zero, and build portfolios, not single bets."},
+        {"say": "Above all, evidence beats opinion. Including your own, and the AI's. Now go build something real. See you at Demo Day.", "show": "sub"}
+      ]
+    }
+  ]
+}

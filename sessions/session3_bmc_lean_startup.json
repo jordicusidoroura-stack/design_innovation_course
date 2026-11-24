@@ -1,0 +1,1009 @@
+{
+ "meta": {
+  "session": "Session 3 · Business Model Canvas & Lean Startup",
+  "course": "Designing Innovative Products & Business",
+  "author": "Jordi Cusidó Roura",
+  "output": "Session3_BMC_Lean_Startup.mp4",
+  "tts": "edge",
+  "voice": "en-GB-RyanNeural",
+  "rate": "+0%"
+ },
+ "scenes": [
+  {
+   "type": "title",
+   "label": "Session 3",
+   "title": "Business Model Canvas and Lean Startup",
+   "subtitle": "How to describe a business on one page, and how to turn it into evidence",
+   "beats": [
+    {
+     "say": "Welcome to session three. In the first part you will learn how to fill in the Business Model Canvas: not just what each box means, but what to ask yourself to fill it in well. In the second part, Lean Startup: how to test what the canvas assumes."
+    }
+   ]
+  },
+  {
+   "type": "cards",
+   "label": "Part 1 · Business Model Canvas",
+   "title": "One page: how you create, deliver and capture value",
+   "cards": [
+    {
+     "title": "Business model",
+     "text": "The logic of how a business creates, delivers and captures value. This is what the canvas describes."
+    },
+    {
+     "title": "Business plan",
+     "text": "A formal document with market, strategy and financials. It comes later, once you have evidence."
+    },
+    {
+     "title": "Revenue model",
+     "text": "How you make money. Only one of the nine blocks of the canvas."
+    }
+   ],
+   "banner": "Design the model first. Write the plan later.",
+   "beats": [
+    {
+     "say": "The Business Model Canvas describes, on a single page, how an organisation creates, delivers and captures value.",
+     "show": "card0"
+    },
+    {
+     "say": "It is not a business plan. A plan is a formal document you write later, once you have evidence.",
+     "show": "card1"
+    },
+    {
+     "say": "And it is not just your revenue model. How you make money is only one of its nine blocks.",
+     "show": "card2"
+    },
+    {
+     "say": "So: model first, plan later.",
+     "show": "banner"
+    }
+   ]
+  },
+  {
+   "type": "canvas",
+   "label": "02 · The canvas",
+   "title": "Nine blocks, two sides, one centre",
+   "beats": [
+    {
+     "say": "The right-hand side is about customers and value: who you serve, what you offer them, how you reach them, how you relate to them, and how they pay you.",
+     "show": [
+      "cs",
+      "vp",
+      "ch",
+      "cr",
+      "rev"
+     ]
+    },
+    {
+     "say": "The left-hand side is about how you make it happen: the activities, resources and partners you need, and what all of that costs.",
+     "show": [
+      "ka",
+      "kr",
+      "kp",
+      "cost"
+     ]
+    },
+    {
+     "say": "Value on the right, efficiency on the left. And the value proposition sits in the middle, because every other block connects to it.",
+     "show": "sides"
+    }
+   ]
+  },
+  {
+   "type": "split",
+   "label": "Before you start",
+   "title": "“Key” means key to your idea, not everything a company needs",
+   "left": {
+    "head": "Key for Spotify",
+    "items": [
+     "Streaming platform and apps",
+     "Recommendation algorithm",
+     "Music licences",
+     "Deals with record labels"
+    ]
+   },
+   "right": {
+    "head": "Needed, but not key",
+    "items": [
+     "Accounting",
+     "Administration and payroll",
+     "Human resources",
+     "Office facilities"
+    ]
+   },
+   "banner": "Test: if this disappeared, would my value proposition stop existing, or stop being different? If not, leave it off the canvas.",
+   "beats": [
+    {
+     "say": "Before we go block by block, one idea that will save you a lot of time. The canvas is not an inventory of every department your company will need."
+    },
+    {
+     "say": "Take Spotify. What is truly key is the streaming platform, the recommendation algorithm, the music licences and the deals with record labels.",
+     "show": [
+      "lhead",
+      "l0",
+      "l1",
+      "l2",
+      "l3"
+     ]
+    },
+    {
+     "say": "Of course Spotify also needs accounting, administration, human resources and offices. But none of these is a key activity or a key resource. Every company needs them. None of them makes Spotify, Spotify.",
+     "show": [
+      "rhead",
+      "r0",
+      "r1",
+      "r2",
+      "r3"
+     ]
+    },
+    {
+     "say": "So use this test. If this disappeared, would my value proposition stop existing, or stop being different? If the answer is no, it does not belong on your canvas.",
+     "show": "banner"
+    }
+   ]
+  },
+  {
+   "type": "block",
+   "block": "cs",
+   "questions": [
+    "For whom are we creating value?",
+    "Which groups have different needs, channels or willingness to pay?",
+    "Who pays, and who uses? Are they the same?"
+   ],
+   "mistake": "Writing “everyone” or “young people”. If you cannot picture a specific customer, you do not have a segment yet.",
+   "example": "Spotify serves two segments: listeners, who use it, and advertisers, who pay to reach them.",
+   "beats": [
+    {
+     "say": "Start with customer segments. Ask yourself: for whom are we creating value?",
+     "show": "q0"
+    },
+    {
+     "say": "Groups with different needs, different channels or a different willingness to pay are different segments.",
+     "show": "q1"
+    },
+    {
+     "say": "And separate who pays from who uses. They are often not the same.",
+     "show": "q2"
+    },
+    {
+     "say": "The typical mistake is writing everyone. If you cannot picture a specific customer, you do not have a segment yet.",
+     "show": "mistake"
+    },
+    {
+     "say": "Spotify, for example, serves two segments: listeners, who use it, and advertisers, who pay to reach them.",
+     "show": "example"
+    }
+   ]
+  },
+  {
+   "type": "block",
+   "block": "vp",
+   "questions": [
+    "Which problem do we solve, or which need do we satisfy?",
+    "Why would this segment choose us over the alternatives?",
+    "What makes us different: newness, performance, price, convenience?"
+   ],
+   "mistake": "Listing product features instead of the benefit the customer actually gets.",
+   "example": "Spotify: any song, anywhere, instantly. Free with ads, or premium without them.",
+   "beats": [
+    {
+     "say": "Next, the value proposition: the heart of the canvas. Which problem do you solve, or which need do you satisfy?",
+     "show": "q0"
+    },
+    {
+     "say": "Why would this segment choose you over what they use today? Remember that doing nothing is also an alternative.",
+     "show": "q1"
+    },
+    {
+     "say": "And what makes you different: something new, better performance, a lower price, more convenience?",
+     "show": "q2"
+    },
+    {
+     "say": "The typical mistake is listing features instead of the benefit the customer actually gets.",
+     "show": "mistake"
+    },
+    {
+     "say": "For Spotify: any song, anywhere, instantly. This block deserves more work than any other, so let's look at two tools from Blue Ocean Strategy.",
+     "show": "example"
+    }
+   ]
+  },
+  {
+   "type": "strategy",
+   "label": "Value proposition · Tool 1",
+   "title": "Strategy canvas: draw how your industry competes",
+   "factors": [
+    "Price",
+    "Star performers",
+    "Animal shows",
+    "Aisle concessions",
+    "Multiple show arenas",
+    "Fun and humour",
+    "Thrill and danger",
+    "Unique venue",
+    "Theme",
+    "Refined setting",
+    "Multiple productions",
+    "Artistic music and dance"
+   ],
+   "max": 5,
+   "curves": [
+    {
+     "name": "Traditional circus",
+     "color": "ink",
+     "values": [
+      3,
+      4,
+      4.5,
+      4,
+      4,
+      4,
+      4.5,
+      1.5,
+      0.3,
+      0.3,
+      0.3,
+      1
+     ]
+    },
+    {
+     "name": "Cirque du Soleil",
+     "color": "amber",
+     "values": [
+      4.3,
+      0.3,
+      0.3,
+      0.3,
+      0.3,
+      2.3,
+      2.3,
+      4.5,
+      4.2,
+      4.3,
+      3.8,
+      4.2
+     ]
+    }
+   ],
+   "note": "Illustrative, based on Kim and Mauborgne, Blue Ocean Strategy.",
+   "beats": [
+    {
+     "say": "Before writing your value proposition, go back to the Blue Ocean tools from session one. First, the strategy canvas: the factors your industry competes on, and how much of each one customers receive."
+    },
+    {
+     "say": "Then draw the value curve of today's players. Here, the traditional circus: star performers, animal shows, concessions, several rings, thrills.",
+     "show": "curve0"
+    },
+    {
+     "say": "Now draw yours. Cirque du Soleil dropped most of what circuses competed on, and created new factors borrowed from theatre: a theme, a refined setting, artistic music and dance. A different curve means a different offer, not just a better one.",
+     "show": "curve1"
+    }
+   ]
+  },
+  {
+   "type": "errc",
+   "label": "Value proposition · Tool 2",
+   "title": "ERRC grid: four decisions that reshape your offer",
+   "quads": [
+    {
+     "question": "What does the industry take for granted that we can drop?",
+     "items": [
+      "Star performers",
+      "Animal shows",
+      "Aisle concessions",
+      "Multiple show arenas"
+     ]
+    },
+    {
+     "question": "What can go well below the standard?",
+     "items": [
+      "Fun and humour",
+      "Thrill and danger"
+     ]
+    },
+    {
+     "question": "What should go well above the standard?",
+     "items": [
+      "Unique venue"
+     ]
+    },
+    {
+     "question": "What has the industry never offered?",
+     "items": [
+      "Theme",
+      "Refined setting",
+      "Multiple productions",
+      "Artistic music and dance"
+     ]
+    }
+   ],
+   "banner": "Your new value curve, summarised, is what goes in the Value Proposition block.",
+   "beats": [
+    {
+     "say": "The ERRC grid turns that curve into four decisions."
+    },
+    {
+     "say": "Eliminate: which factors that the industry takes for granted can you drop?",
+     "show": "q0"
+    },
+    {
+     "say": "Reduce: which can go well below the industry standard?",
+     "show": "q1"
+    },
+    {
+     "say": "Raise: which should go well above it?",
+     "show": "q2"
+    },
+    {
+     "say": "And create: what can you offer that the industry has never offered?",
+     "show": "q3"
+    },
+    {
+     "say": "Once you have these answers, your new value curve is your value proposition. Summarise it in the block.",
+     "show": "banner"
+    }
+   ]
+  },
+  {
+   "type": "block",
+   "block": "ch",
+   "questions": [
+    "Through which channels does this segment want to be reached?",
+    "How do they discover, evaluate, buy, receive and get support?",
+    "Which channels work best, and which cost least?"
+   ],
+   "mistake": "Listing every channel you can think of, instead of the ones your segment actually uses.",
+   "example": "Nespresso sells through its own club, boutiques and online shop, so it controls the whole experience.",
+   "beats": [
+    {
+     "say": "Channels. Through which channels does this segment want to be reached?",
+     "show": "q0"
+    },
+    {
+     "say": "Think of the whole journey: how customers discover you, evaluate you, buy, receive the product and get support.",
+     "show": "q1"
+    },
+    {
+     "say": "Then ask which channels work best, and which cost least.",
+     "show": "q2"
+    },
+    {
+     "say": "The typical mistake is listing every channel you can imagine, instead of the ones your customers actually use.",
+     "show": "mistake"
+    },
+    {
+     "say": "Nespresso sells through its own club, boutiques and online shop, so it controls the whole experience.",
+     "show": "example"
+    }
+   ]
+  },
+  {
+   "type": "block",
+   "block": "cr",
+   "questions": [
+    "What relationship does each segment expect: personal, self-service, automated, community?",
+    "How do we get, keep and grow customers?",
+    "How much does that relationship cost us?"
+   ],
+   "mistake": "Confusing relationships with channels. Channels deliver; relationships describe the bond.",
+   "example": "Spotify: automated and personalised. Your own playlists keep you coming back.",
+   "beats": [
+    {
+     "say": "Customer relationships. What kind of relationship does each segment expect: personal, self-service, automated, or a community?",
+     "show": "q0"
+    },
+    {
+     "say": "How will you get customers, keep them, and grow what they buy?",
+     "show": "q1"
+    },
+    {
+     "say": "And how much does that relationship cost you?",
+     "show": "q2"
+    },
+    {
+     "say": "Do not confuse relationships with channels. Channels deliver. Relationships describe the bond.",
+     "show": "mistake"
+    },
+    {
+     "say": "Spotify's relationship is automated and personalised. Your own playlists keep you coming back.",
+     "show": "example"
+    }
+   ]
+  },
+  {
+   "type": "block",
+   "block": "rev",
+   "questions": [
+    "For what value is each segment really willing to pay?",
+    "How do they pay: purchase, subscription, licence, usage, advertising?",
+    "How much does each stream contribute?"
+   ],
+   "mistake": "Choosing a price without checking who pays. Same asset, different payer: a different business.",
+   "example": "HealthApp: 5 € per patient per month, paid by the clinic, not by the patient.",
+   "beats": [
+    {
+     "say": "Revenue streams. For what value is each segment really willing to pay?",
+     "show": "q0"
+    },
+    {
+     "say": "How do they pay: a one-off purchase, a subscription, a licence, per use, or through advertising?",
+     "show": "q1"
+    },
+    {
+     "say": "And how much does each stream contribute to the total?",
+     "show": "q2"
+    },
+    {
+     "say": "Remember the cow exercise: the same asset with a different payer is a different business. Always check who pays.",
+     "show": "mistake"
+    },
+    {
+     "say": "HealthApp charges five euros per patient per month, and the clinic pays, not the patient.",
+     "show": "example"
+    }
+   ]
+  },
+  {
+   "type": "block",
+   "block": "ka",
+   "questions": [
+    "What must we do exceptionally well to deliver the value proposition?",
+    "Which activities reach customers and sustain relationships?",
+    "Would the value proposition survive without it?"
+   ],
+   "mistake": "Listing accounting, admin and cleaning: things every company does.",
+   "example": "Spotify: platform development, recommendation, and negotiating licences.",
+   "beats": [
+    {
+     "say": "Now the left side. Key activities: what must you do exceptionally well to deliver your value proposition?",
+     "show": "q0"
+    },
+    {
+     "say": "Which activities reach your customers and sustain the relationship?",
+     "show": "q1"
+    },
+    {
+     "say": "And apply the test: would the value proposition survive without this activity?",
+     "show": "q2"
+    },
+    {
+     "say": "If your list includes accounting, administration or cleaning, you are describing every company, not yours.",
+     "show": "mistake"
+    },
+    {
+     "say": "For Spotify: developing the platform, recommending music, and negotiating licences.",
+     "show": "example"
+    }
+   ]
+  },
+  {
+   "type": "block",
+   "block": "kr",
+   "questions": [
+    "Which physical, intellectual, human or financial assets does the model require?",
+    "Which of them are hard for others to copy?",
+    "Which do we own, and which do we only access?"
+   ],
+   "mistake": "Writing “money” and “people”. Which people, and why are they key?",
+   "example": "Nespresso: the patented capsule system and a strong brand.",
+   "beats": [
+    {
+     "say": "Key resources. Which physical, intellectual, human or financial assets does your model require?",
+     "show": "q0"
+    },
+    {
+     "say": "Which of them are hard for others to copy? Those are the ones that protect you.",
+     "show": "q1"
+    },
+    {
+     "say": "And which do you own, and which do you only access?",
+     "show": "q2"
+    },
+    {
+     "say": "Writing money and people tells us nothing. Which people, and why are they key?",
+     "show": "mistake"
+    },
+    {
+     "say": "Nespresso's key resources are its patented capsule system and a strong brand.",
+     "show": "example"
+    }
+   ]
+  },
+  {
+   "type": "block",
+   "block": "kp",
+   "questions": [
+    "Who provides key resources or activities we do not do ourselves?",
+    "Why partner: scale, lower risk, access to resources?",
+    "How dependent are we on each one?"
+   ],
+   "mistake": "Listing every supplier, down to the one who sells you paper.",
+   "example": "Spotify: record labels and rights holders. Essential partners, and also its main cost.",
+   "beats": [
+    {
+     "say": "Key partners. Who provides key resources or activities that you do not do yourself?",
+     "show": "q0"
+    },
+    {
+     "say": "Why partner? To gain scale, to reduce risk, or to access resources you could not build.",
+     "show": "q1"
+    },
+    {
+     "say": "And how dependent are you on each partner?",
+     "show": "q2"
+    },
+    {
+     "say": "Again, not every supplier. The company that sells you paper is not a key partner.",
+     "show": "mistake"
+    },
+    {
+     "say": "For Spotify, record labels and rights holders are essential partners, and also its main cost.",
+     "show": "example"
+    }
+   ]
+  },
+  {
+   "type": "block",
+   "block": "cost",
+   "questions": [
+    "What are the most important costs in this model?",
+    "Which key resources and activities are the most expensive?",
+    "Is the model driven by low cost, or by value?"
+   ],
+   "mistake": "Building a full budget. Here, only the costs that come from the key blocks.",
+   "example": "Spotify: royalties paid to rights holders are by far its largest cost.",
+   "beats": [
+    {
+     "say": "Finally, cost structure. What are the most important costs in this model?",
+     "show": "q0"
+    },
+    {
+     "say": "Which key resources and activities are the most expensive?",
+     "show": "q1"
+    },
+    {
+     "say": "Is your model driven by being cheaper, or by delivering more value?",
+     "show": "q2"
+    },
+    {
+     "say": "This is not a full budget. Only the costs that come from your key blocks.",
+     "show": "mistake"
+    },
+    {
+     "say": "For Spotify, royalties paid to rights holders are by far its largest cost.",
+     "show": "example"
+    }
+   ]
+  },
+  {
+   "type": "cards",
+   "label": "03 · In practice",
+   "title": "How to fill it in",
+   "cards": [
+    {
+     "title": "Right side first",
+     "text": "Customer segments and value proposition, always together."
+    },
+    {
+     "title": "Then reach and revenue",
+     "text": "Channels, relationships and revenue streams."
+    },
+    {
+     "title": "Then the engine",
+     "text": "Activities, resources, partners and costs."
+    },
+    {
+     "title": "Mark the risks",
+     "text": "One idea per sticky note. Circle the three riskiest assumptions."
+    }
+   ],
+   "banner": "Four risks to check: desirability, viability, feasibility, adaptability.",
+   "beats": [
+    {
+     "say": "In practice, start on the right: customer segments and value proposition, always together.",
+     "show": "card0"
+    },
+    {
+     "say": "Then channels, relationships and revenue streams.",
+     "show": "card1"
+    },
+    {
+     "say": "Then the engine: activities, resources, partners and costs.",
+     "show": "card2"
+    },
+    {
+     "say": "Use one idea per sticky note, and circle the three riskiest assumptions.",
+     "show": "card3"
+    },
+    {
+     "say": "Will customers want it? Can you earn enough? Can you build it? And will the environment let you? Desirability, viability, feasibility and adaptability.",
+     "show": "banner"
+    }
+   ]
+  },
+  {
+   "type": "statement",
+   "label": "04 · A critical view",
+   "text": "In innovation, the canvas is only partly useful.",
+   "sub": "It asks you to invent how a business works before you know how it works.",
+   "beats": [
+    {
+     "say": "To finish, a critical reflection. In innovation and entrepreneurship, the canvas is only partially useful."
+    },
+    {
+     "say": "Why? Because it demands a lot of invention. At the start you rarely know who will really pay, through which channel, or at what cost. So you fill nine tidy boxes with guesses, and a tidy format makes guesses look like facts.",
+     "show": "sub"
+    }
+   ]
+  },
+  {
+   "type": "statement",
+   "label": "Part 2 · Lean Startup",
+   "text": "Every sticky note is a hypothesis.",
+   "sub": "A nice-looking canvas is not a validated model.\nSo how do you test it? That is what Lean Startup is for.",
+   "beats": [
+    {
+     "say": "The real danger is confusing a nice-looking canvas with a validated model."
+    },
+    {
+     "say": "So use it as a map of hypotheses: to discuss, to prioritise, and to decide what to test first. And how do you test them? That is exactly what Lean Startup is for. Let's see it.",
+     "show": "sub"
+    }
+   ]
+  },
+  {
+   "type": "statement",
+   "label": "Lean Startup",
+   "text": "“No business plan survives first contact with customers.”",
+   "sub": "Steve Blank. When the territory is unknown, you need a compass, not a timetable.",
+   "beats": [
+    {
+     "say": "Why not start with a business plan? Steve Blank, one of the fathers of the lean movement, puts it bluntly: no business plan survives first contact with customers."
+    },
+    {
+     "say": "A plan assumes you know the territory. Innovation is a journey of discovery: the maps are drawn while you explore. You need a compass, not a timetable.",
+     "show": "sub"
+    }
+   ]
+  },
+  {
+   "type": "cards",
+   "label": "Design and test",
+   "title": "Two loops that feed each other",
+   "cards": [
+    {
+     "title": "Design",
+     "text": "Shape and reshape ideas into business prototypes: your canvases."
+    },
+    {
+     "title": "Test",
+     "text": "Break ideas into hypotheses, and test the most important first."
+    },
+    {
+     "title": "Learn",
+     "text": "Analyse the evidence: support, refute, or pivot. Then design again."
+    }
+   ],
+   "beats": [
+    {
+     "say": "Think of innovation as two loops that feed each other. In the design loop, you shape your idea into business prototypes, like the canvas.",
+     "show": "card0"
+    },
+    {
+     "say": "In the testing loop, you break that design into hypotheses, and test the most important ones first.",
+     "show": "card1"
+    },
+    {
+     "say": "Then you learn from the evidence: it supports your idea, refutes it, or tells you to change course. And you go back to design.",
+     "show": "card2"
+    }
+   ]
+  },
+  {
+   "type": "list",
+   "label": "Lean Startup",
+   "title": "Five principles of Lean Startup (Eric Ries)",
+   "items": [
+    {
+     "title": "Entrepreneurs are everywhere",
+     "text": "Any organisation, any size: no garage required."
+    },
+    {
+     "title": "Startups need management",
+     "text": "A startup is an institution, not just a product."
+    },
+    {
+     "title": "Validated learning",
+     "text": "Measure progress scientifically."
+    },
+    {
+     "title": "Build–measure–learn",
+     "text": "Accelerate every decision."
+    },
+    {
+     "title": "Innovation accounting",
+     "text": "Metrics designed for startups."
+    }
+   ],
+   "beats": [
+    {
+     "say": "Eric Ries built Lean Startup on five principles. Entrepreneurs are everywhere: inside a big company or in a garage. And a startup needs management, because it is an institution, not just a product.",
+     "show": [
+      "i0",
+      "i1"
+     ]
+    },
+    {
+     "say": "Progress is measured as validated learning. You move through a build, measure, learn loop. And you track it with innovation accounting: metrics designed for uncertainty, not for running a known business.",
+     "show": [
+      "i2",
+      "i3",
+      "i4"
+     ]
+    }
+   ]
+  },
+  {
+   "type": "cycle",
+   "label": "The loop",
+   "title": "Build – Measure – Learn",
+   "center": "Shorten the loop: learning is the unit of progress",
+   "nodes": [
+    {
+     "title": "Build",
+     "text": "Turn ideas into the smallest product that can test them."
+    },
+    {
+     "title": "Measure",
+     "text": "Collect data on how real customers react."
+    },
+    {
+     "title": "Learn",
+     "text": "Persevere or pivot, then start the loop again."
+    }
+   ],
+   "beats": [
+    {
+     "say": "The heart of the method is a loop. Build: turn your idea into the smallest product that can test it.",
+     "show": "n0"
+    },
+    {
+     "say": "Measure: collect data on how real customers react. Not what they say: what they do.",
+     "show": "n1"
+    },
+    {
+     "say": "Learn: decide whether to persevere or pivot, and start again. The faster you go round this loop, the faster you learn.",
+     "show": "n2"
+    }
+   ]
+  },
+  {
+   "type": "steps",
+   "label": "Prototypes and MVPs",
+   "title": "From paper to minimum viable product",
+   "steps": [
+    {
+     "tag": "Hours",
+     "title": "Paper",
+     "text": "Tests the idea and the flow."
+    },
+    {
+     "tag": "Days",
+     "title": "Interactive",
+     "text": "Tests usability and engagement."
+    },
+    {
+     "tag": "Weeks",
+     "title": "MVP",
+     "text": "Tests real behaviour and value."
+    }
+   ],
+   "banner": "SMARTIVE: first a traffic-light grid of turbines, then a web dashboard with alarms. Each version answered one question from operators.",
+   "beats": [
+    {
+     "say": "The minimum viable product is the fastest way to start learning. Climb the fidelity ladder one step at a time. A paper prototype takes hours, and tests the idea and the flow.",
+     "show": "s0"
+    },
+    {
+     "say": "An interactive prototype takes days, and tests usability.",
+     "show": "s1"
+    },
+    {
+     "say": "A minimum viable product takes weeks, and tests real behaviour: will people actually use it, and pay for it?",
+     "show": "s2"
+    },
+    {
+     "say": "SMARTIVE's diagnostic platform started as a simple traffic-light grid of wind turbines, then became a web dashboard with alarms. Each version answered one question from operators. Add fidelity only when you need it.",
+     "show": "banner"
+    }
+   ]
+  },
+  {
+   "type": "canvas",
+   "label": "Lean Canvas",
+   "title": "The Lean Canvas: built around the problem",
+   "labels": {
+    "kp": [
+     "Problem",
+     "Top 3 problems + existing alternatives"
+    ],
+    "ka": [
+     "Solution",
+     "Top 3 features"
+    ],
+    "kr": [
+     "Key metrics",
+     "Numbers that matter"
+    ],
+    "vp": [
+     "Unique value proposition",
+     "One clear, compelling message"
+    ],
+    "cr": [
+     "Unfair advantage",
+     "Can't be copied or bought"
+    ],
+    "ch": [
+     "Channels",
+     "Path to customers"
+    ],
+    "cs": [
+     "Customer segments",
+     "Target customers + early adopters"
+    ],
+    "cost": [
+     "Cost structure",
+     "Fixed and variable costs"
+    ],
+    "rev": [
+     "Revenue streams",
+     "Revenue model, lifetime value, margin"
+    ]
+   },
+   "beats": [
+    {
+     "say": "Ash Maurya adapted the Business Model Canvas for startups: the Lean Canvas. It starts from the problem: the top three problems of your customers, and how they solve them today.",
+     "show": [
+      "kp",
+      "cs"
+     ]
+    },
+    {
+     "say": "Then a unique value proposition, in one clear message, and the solution: just the top three features.",
+     "show": [
+      "vp",
+      "ka"
+     ]
+    },
+    {
+     "say": "Channels, revenue and costs stay, as in the original canvas.",
+     "show": [
+      "ch",
+      "rev",
+      "cost"
+     ]
+    },
+    {
+     "say": "And two new blocks: the key metrics that tell you whether you are making progress, and your unfair advantage, something that cannot easily be copied or bought.",
+     "show": [
+      "kr",
+      "cr"
+     ]
+    }
+   ]
+  },
+  {
+   "type": "cards",
+   "label": "Example",
+   "title": "SMARTIVE on a Lean Canvas (2016)",
+   "cards": [
+    {
+     "title": "Problem",
+     "text": "Turbines stopped 5–40% of the time by failures; SCADA data lost."
+    },
+    {
+     "title": "Unique value proposition",
+     "text": "SmartCast, the “wind turbine doctor”."
+    },
+    {
+     "title": "Revenue",
+     "text": "SaaS maintenance at 20 € per turbine per month; predictive algorithms at 100–300 €."
+    },
+    {
+     "title": "Unfair advantage",
+     "text": "The more users, the better the algorithms."
+    }
+   ],
+   "beats": [
+    {
+     "say": "Here is SMARTIVE on a Lean Canvas in 2016. The problem: turbines stopped between five and forty percent of the time by failures, while their data was being lost.",
+     "show": "card0"
+    },
+    {
+     "say": "The value proposition, in one message: SmartCast, the wind turbine doctor.",
+     "show": "card1"
+    },
+    {
+     "say": "Revenue: a software service at twenty euros per turbine per month, and predictive algorithms at one hundred to three hundred.",
+     "show": "card2"
+    },
+    {
+     "say": "And the unfair advantage: the more users, the better the algorithms become.",
+     "show": "card3"
+    }
+   ]
+  },
+  {
+   "type": "list",
+   "label": "Pivot",
+   "title": "Pivot: change course, keep the learning",
+   "style": "check",
+   "items": [
+    {
+     "title": "Customer segment",
+     "text": "Same product, a different customer."
+    },
+    {
+     "title": "Customer need",
+     "text": "Same customer, a different problem."
+    },
+    {
+     "title": "Zoom-in or zoom-out",
+     "text": "A feature becomes the product, or the reverse."
+    },
+    {
+     "title": "Revenue model",
+     "text": "Change how you charge."
+    },
+    {
+     "title": "Channel",
+     "text": "Change how you reach customers."
+    },
+    {
+     "title": "Technology",
+     "text": "Same solution, a different technology."
+    }
+   ],
+   "banner": "SMARTIVE pivoted from selling a SCADA product to selling diagnostic services: same data, new value proposition and revenue model.",
+   "beats": [
+    {
+     "say": "When the evidence says your idea doesn't work as planned, you pivot. A pivot is like a basketball move: one foot stays on what you learned, the other moves."
+    },
+    {
+     "say": "You can pivot on the customer segment, on the customer need, or zoom in so that one feature becomes the whole product.",
+     "show": [
+      "i0",
+      "i1",
+      "i2"
+     ]
+    },
+    {
+     "say": "You can also change the revenue model, the channel, or the technology.",
+     "show": [
+      "i3",
+      "i4",
+      "i5"
+     ]
+    },
+    {
+     "say": "SMARTIVE pivoted from selling a SCADA product to selling diagnostic services: the same data, with a new value proposition and a new revenue model.",
+     "show": "banner"
+    }
+   ]
+  },
+  {
+   "type": "statement",
+   "label": "Takeaway",
+   "text": "Learning is the unit of progress.",
+   "sub": "Explore before you plan. Build the smallest useful MVP. Pivot with evidence.\nNext session: Value Proposition Design.",
+   "beats": [
+    {
+     "say": "To sum up. The canvas describes your business on one page, but every block is a hypothesis. Lean Startup turns those hypotheses into evidence."
+    },
+    {
+     "say": "Explore before you plan. Shorten the build, measure, learn loop. Build the smallest MVP that can teach you something. And pivot when the evidence tells you to. In the next session we zoom into the heart of the canvas: Value Proposition Design.",
+     "show": "sub"
+    }
+   ]
+  }
+ ]
+}

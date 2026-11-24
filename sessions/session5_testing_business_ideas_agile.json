@@ -1,0 +1,276 @@
+{
+  "meta": {
+    "session": "Session 5 · Testing Business Ideas & Agile",
+    "course": "Designing Innovative Products & Business",
+    "author": "Jordi Cusidó Roura",
+    "output": "Session5_Testing_Business_Ideas_Agile.mp4",
+    "tts": "edge",
+    "voice": "en-GB-RyanNeural",
+    "rate": "+0%"
+  },
+  "scenes": [
+    {
+      "type": "title",
+      "label": "Session 5",
+      "title": "Testing Business Ideas and Agile",
+      "subtitle": "Reduce the risk of ideas with experiments, and organise the work with Scrum and design sprints",
+      "beats": [
+        {"say": "Welcome to session five. Today, two things: how to reduce the risk of an idea with experiments, and how to organise a team that learns fast, with Scrum and design sprints."}
+      ]
+    },
+    {
+      "type": "table",
+      "label": "01 · Explore vs exploit",
+      "title": "Two different games",
+      "headers": ["", "Exploit · project management", "Explore · Lean Startup"],
+      "rows": [
+        ["Starting point", "Problem and solution are known", "Problem and solution are hypotheses"],
+        ["Method", "Plan, then execute", "Experiment, then decide"],
+        ["Process", "Linear: waterfall phases", "Iterative: short learning cycles"],
+        ["Success", "On time, on budget", "Validated learning"],
+        ["Failure", "A deviation", "Information"]
+      ],
+      "beats": [
+        {"say": "Running a known business and searching for a new one are two different games."},
+        {"say": "When you exploit, problem and solution are known: you plan, then execute, in linear phases.", "show": ["r0", "r1", "r2"]},
+        {"say": "When you explore, they are hypotheses. Success is not finishing on time and on budget: it is validated learning. And failure is not a deviation from the plan. It is information.", "show": ["r3", "r4"]}
+      ]
+    },
+    {
+      "type": "cycle",
+      "label": "Iterate",
+      "title": "Iterate: the goal is to learn",
+      "center": "Explore until the evidence is strong enough to exploit",
+      "nodes": [
+        {"title": "Hypothesis", "text": "What must be true for the idea to work?"},
+        {"title": "Experiment", "text": "The cheapest test that produces evidence."},
+        {"title": "Evidence", "text": "Data from real customer behaviour."},
+        {"title": "Insight", "text": "What did we learn?"},
+        {"title": "Decision", "text": "Persevere, pivot, or kill."}
+      ],
+      "beats": [
+        {"say": "Exploring is a cycle. Start with a hypothesis: what must be true for the idea to work?", "show": "n0"},
+        {"say": "Design the cheapest experiment that can produce evidence.", "show": "n1"},
+        {"say": "Collect evidence from real customer behaviour.", "show": "n2"},
+        {"say": "Turn it into an insight: what did we learn?", "show": "n3"},
+        {"say": "And decide: persevere, pivot, or kill the idea. Keep exploring until the evidence is strong enough to start exploiting.", "show": "n4"}
+      ]
+    },
+    {
+      "type": "cards",
+      "label": "02 · Testing business ideas",
+      "title": "What could kill your idea?",
+      "cards": [
+        {"title": "Desirability", "text": "Do they want this?"},
+        {"title": "Feasibility", "text": "Can we build and deliver it?"},
+        {"title": "Viability", "text": "Can we earn more than we spend?"}
+      ],
+      "beats": [
+        {"say": "Testing Business Ideas, by David Bland and Alex Osterwalder, turns every canvas into hypotheses. They fall into three families. Desirability: do customers want this?", "show": "card0"},
+        {"say": "Feasibility: can we build it and deliver it?", "show": "card1"},
+        {"say": "Viability: can we earn more money than we spend?", "show": "card2"}
+      ]
+    },
+    {
+      "type": "quad",
+      "label": "Assumptions map",
+      "title": "Test the riskiest assumptions first",
+      "y_axis": "Importance",
+      "x_axis": "Less evidence",
+      "highlight": 1,
+      "quads": [
+        {"title": "Important, proven", "text": "Critical, but you already have evidence."},
+        {"title": "Test first", "text": "Critical, and little evidence. Start here."},
+        {"title": "Less important", "text": "Some evidence, low impact."},
+        {"title": "Watch", "text": "Little evidence, low impact. Revisit later."}
+      ],
+      "beats": [
+        {"say": "You cannot test everything, so map your assumptions. Vertically, how important each one is for the idea to work. Horizontally, how little evidence you have."},
+        {"say": "The top-right corner is where you start: assumptions that are critical, and that you have no evidence for.", "show": "q1"},
+        {"say": "Important assumptions that are already proven can wait.", "show": "q0"},
+        {"say": "And the less important ones, you simply keep an eye on.", "show": ["q2", "q3"]}
+      ]
+    },
+    {
+      "type": "template",
+      "label": "Test and learn",
+      "title": "Test card before, learning card after",
+      "cards": [
+        {"head": "Test card · before", "rows": [
+          {"lead": "We believe that", "fill": "…our hypothesis."},
+          {"lead": "To verify that, we will", "fill": "…the experiment."},
+          {"lead": "And measure", "fill": "…the metric."},
+          {"lead": "We are right if", "fill": "…the success threshold."}
+        ]},
+        {"head": "Learning card · after", "dark": true, "rows": [
+          {"lead": "We believed that", "fill": "…the hypothesis."},
+          {"lead": "We observed", "fill": "…the data."},
+          {"lead": "From that we learned", "fill": "…the insight."},
+          {"lead": "Therefore, we will", "fill": "…the decision."}
+        ]}
+      ],
+      "beats": [
+        {"say": "Write every experiment on a test card, before you run it. We believe that: your hypothesis. To verify that, we will: the experiment. And measure: the metric. We are right if: the success threshold. Writing the threshold first stops you from fooling yourself later.", "show": "card0"},
+        {"say": "After the experiment, fill in a learning card. We believed that. We observed. From that we learned. And therefore, we will: persevere, pivot, or stop.", "show": "card1"}
+      ]
+    },
+    {
+      "type": "steps",
+      "label": "Experiments",
+      "title": "Discovery first, validation second",
+      "steps": [
+        {"tag": "Discovery", "title": "Customer interviews", "text": "What people say."},
+        {"tag": "Discovery", "title": "Search and forum analysis", "text": "Existing demand."},
+        {"tag": "Discovery", "title": "Paper prototype", "text": "First reactions."},
+        {"tag": "Validation", "title": "Landing page", "text": "Sign-ups and clicks."},
+        {"tag": "Validation", "title": "Mock sale or pre-order", "text": "Willingness to pay."},
+        {"tag": "Validation", "title": "Single-feature MVP", "text": "Real usage."}
+      ],
+      "beats": [
+        {"say": "Choose experiments in two stages. Discovery experiments are cheap and fast, and they tell you whether you are on the right track: interviews, searching what people already ask for online, paper prototypes.", "show": ["s0", "s1", "s2"]},
+        {"say": "Validation experiments produce stronger evidence, because people act instead of talk: they sign up on a landing page, they pre-order, or they actually use a single-feature product.", "show": ["s3", "s4", "s5"]}
+      ]
+    },
+    {
+      "type": "steps",
+      "label": "03 · Scrum",
+      "title": "How a Scrum sprint works",
+      "steps": [
+        {"title": "Product backlog", "text": "Everything to do, ordered by the product owner."},
+        {"title": "Sprint planning", "text": "1–2 hours at the start: what goes in this sprint."},
+        {"title": "Sprint", "text": "1–4 weeks, with a 15-minute daily scrum."},
+        {"title": "Increment", "text": "A finished, usable product."},
+        {"title": "Review and retro", "text": "1–2 hours at the end: feedback updates the backlog."}
+      ],
+      "beats": [
+        {"say": "Now, how to organise the work. Scrum is a lightweight framework to deliver value in short, focused cycles called sprints. It starts with a product backlog: everything there is to do, ordered by value.", "show": "s0"},
+        {"say": "In sprint planning, the team chooses what goes into the next sprint.", "show": "s1"},
+        {"say": "The sprint lasts one to four weeks, with a fifteen-minute daily scrum to stay aligned.", "show": "s2"},
+        {"say": "At the end there must be an increment: something finished and usable.", "show": "s3"},
+        {"say": "And in the review and the retrospective, the team shows the result, gathers feedback and improves the way it works. That feedback updates the backlog, and the next sprint begins.", "show": "s4"}
+      ]
+    },
+    {
+      "type": "cards",
+      "label": "Scrum team",
+      "title": "One team, three accountabilities",
+      "cards": [
+        {"title": "Product owner", "text": "Maximises the value of the product; owns and orders the backlog."},
+        {"title": "Scrum master", "text": "Makes Scrum work: coaches the team and removes impediments."},
+        {"title": "Developers", "text": "Create a usable increment every sprint. Everyone who builds, not only coders."}
+      ],
+      "banner": "Cross-functional and self-managing: the team decides who does what, when and how.",
+      "beats": [
+        {"say": "A Scrum team has three accountabilities. The product owner maximises the value of the product, and owns the backlog.", "show": "card0"},
+        {"say": "The scrum master makes Scrum work: coaches the team and removes obstacles.", "show": "card1"},
+        {"say": "And the developers create a usable increment every sprint. That means everyone who builds, not only programmers.", "show": "card2"},
+        {"say": "The team is cross-functional, with all the skills it needs, and self-managing: it decides who does what, when and how.", "show": "banner"}
+      ]
+    },
+    {
+      "type": "template",
+      "label": "User stories",
+      "title": "Write work as user stories",
+      "cards": [
+        {"head": "User story", "rows": [
+          {"lead": "As a", "fill": "wind-farm manager,"},
+          {"lead": "I want", "fill": "an alert when a turbine is likely to fail,"},
+          {"lead": "So that", "fill": "I can plan maintenance before it stops."}
+        ]}
+      ],
+      "example": "Done when: the alert arrives by e-mail with turbine ID, risk level and suggested action. Good stories are INVEST: independent, negotiable, valuable, estimable, small and testable.",
+      "example_label": "DEFINITION OF DONE",
+      "beats": [
+        {"say": "Items in the backlog are written as user stories: as a type of user, I want a goal, so that I get a benefit. For example: as a wind-farm manager, I want an alert when a turbine is likely to fail, so that I can plan maintenance before it stops.", "show": "card0"},
+        {"say": "Add a clear definition of done. And check that each story is independent, negotiable, valuable, estimable, small and testable.", "show": "example"}
+      ]
+    },
+    {
+      "type": "stats",
+      "label": "04 · Two-pizza teams",
+      "title": "Why small teams win",
+      "stats": [
+        {"value": "15", "label": "communication links in a team of 6"},
+        {"value": "66", "label": "links in a team of 12"},
+        {"value": "1,225", "label": "links in a company of 50", "highlight": true}
+      ],
+      "banner": "A team should be small enough to be fed with two pizzas.",
+      "beats": [
+        {"say": "Why keep teams small? Count the communication links. In a team of six people there are fifteen.", "show": "st0"},
+        {"say": "Double the team to twelve, and there are sixty-six.", "show": "st1"},
+        {"say": "In a company of fifty, more than twelve hundred.", "show": "st2"},
+        {"say": "That is the idea behind Amazon's two-pizza teams: a team should be small enough to be fed with two pizzas.", "show": "banner"}
+      ]
+    },
+    {
+      "type": "quad",
+      "label": "Prioritisation",
+      "title": "MoSCoW: what really goes in this sprint?",
+      "highlight": 0,
+      "quads": [
+        {"tag": "M", "title": "Must have", "text": "Critical for this delivery to be a success."},
+        {"tag": "S", "title": "Should have", "text": "Important, but not necessary this time."},
+        {"tag": "C", "title": "Could have", "text": "Desirable; improves the experience at little cost."},
+        {"tag": "W", "title": "Won't have", "text": "Still possible, but not this time."}
+      ],
+      "beats": [
+        {"say": "To decide what goes into a sprint, use MoSCoW. Must have: critical for this delivery to succeed.", "show": "q0"},
+        {"say": "Should have: important, but not essential this time.", "show": "q1"},
+        {"say": "Could have: nice, if it costs little.", "show": "q2"},
+        {"say": "And won't have: possible, but not now. Saying no is part of the job.", "show": "q3"}
+      ]
+    },
+    {
+      "type": "quad",
+      "label": "Prioritisation",
+      "title": "Effort vs impact",
+      "y_axis": "Impact",
+      "x_axis": "Effort",
+      "highlight": 0,
+      "quads": [
+        {"title": "Quick wins", "text": "High impact, low effort: do first."},
+        {"title": "Major projects", "text": "High impact, high effort: plan them."},
+        {"title": "Fill-ins", "text": "Low impact, low effort: when there is time."},
+        {"title": "Thankless tasks", "text": "Low impact, high effort: avoid."}
+      ],
+      "banner": "Score impact and effort from 1 to 5 as a team, and re-plot after every sprint review. Impact should come from evidence.",
+      "beats": [
+        {"say": "Another simple tool: plot each task by effort and impact. Quick wins, high impact and low effort, go first.", "show": "q0"},
+        {"say": "Major projects need planning.", "show": "q1"},
+        {"say": "Fill-ins wait until there is time. And thankless tasks, high effort and low impact, you avoid.", "show": ["q2", "q3"]},
+        {"say": "Score each task from one to five as a team, and re-plot after every sprint review. And remember: impact should come from evidence, not opinion.", "show": "banner"}
+      ]
+    },
+    {
+      "type": "steps",
+      "label": "05 · Design sprint",
+      "title": "The design sprint week",
+      "steps": [
+        {"tag": "Monday", "title": "Map", "text": "Understand the problem; pick a target and the sprint question."},
+        {"tag": "Tuesday", "title": "Sketch", "text": "Each person sketches competing solutions on paper."},
+        {"tag": "Wednesday", "title": "Decide", "text": "Critique, vote and storyboard the best idea."},
+        {"tag": "Thursday", "title": "Prototype", "text": "Build a realistic façade, just enough to test."},
+        {"tag": "Friday", "title": "Test", "text": "Five users, one-on-one interviews; learn."}
+      ],
+      "banner": "Team: a decider, a facilitator and experts, up to 7 people. Phrase each risk as a question Friday can answer.",
+      "beats": [
+        {"say": "Finally, the design sprint, created at Google Ventures: five days to answer one critical question with a prototype and real users. On Monday, map the problem and choose the sprint question.", "show": "s0"},
+        {"say": "On Tuesday, everyone sketches competing solutions, alone, on paper.", "show": "s1"},
+        {"say": "On Wednesday, critique, vote, and storyboard the best idea.", "show": "s2"},
+        {"say": "On Thursday, build a realistic façade: just enough to test.", "show": "s3"},
+        {"say": "And on Friday, test it with five users, one by one.", "show": "s4"},
+        {"say": "The team: a decider with the final word, a facilitator, and experts, up to seven people. Phrase every risk as a question that Friday's test can answer.", "show": "banner"}
+      ]
+    },
+    {
+      "type": "statement",
+      "label": "Takeaway",
+      "text": "Test the riskiest thing first.",
+      "sub": "Explore is not exploit. Test card before, learning card after. Short sprints, clear roles, a visible backlog.\nNext session: from innovation to scalable value.",
+      "beats": [
+        {"say": "To sum up. Exploring is not the same as exploiting: innovation needs learning cycles, not only plans."},
+        {"say": "Test the riskiest assumption first, with a test card before and a learning card after. Organise the team with short sprints, clear roles and a visible backlog. And when you face one critical question, run a design sprint. In the final session, we will see how validated ideas become real, scalable assets.", "show": "sub"}
+      ]
+    }
+  ]
+}
