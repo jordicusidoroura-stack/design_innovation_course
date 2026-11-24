@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Training Ground · Designing Innovative Products & Business</title>
+<style>
+  :root {
+    --navy: #1F1A3D; --amber: #F2A93B; --amber-dark: #B86E00; --cream: #FFF5E6;
+    --ink: #4A4566; --muted: #9692AA; --lav: #D9D6EC; --paper: #FAF9FC; --rule: #E6E4EE;
+    --good: #2E8B6F; --good-bg: #E3F3EC; --bad: #C44B4B; --bad-bg: #F8E4E4;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body { font-family: Arial, "Liberation Sans", Helvetica, sans-serif; color: var(--navy); background: #fff;
+         -webkit-font-smoothing: antialiased; }
+  button { font: inherit; cursor: pointer; }
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 0 24px; }
+  .pill { display: inline-block; background: var(--amber); color: var(--navy); font-weight: 700; font-size: 12px;
+          letter-spacing: .18em; text-transform: uppercase; padding: 6px 14px; border-radius: 999px; }
+
+  /* header */
+  header.top { background: var(--navy); color: #fff; position: relative; overflow: hidden; }
+  header.top::before { content: ""; position: absolute; width: 420px; height: 420px; border-radius: 50%;
+                       background: #5C3E48; right: -140px; top: -220px; }
+  header.top::after { content: ""; position: absolute; width: 260px; height: 260px; border-radius: 50%;
+                      background: #2B485D; right: 40px; bottom: -170px; }
+  header.top .wrap { position: relative; z-index: 1; padding-top: 40px; padding-bottom: 36px; }
+  h1 { font-size: clamp(30px, 5vw, 48px); margin: 16px 0 8px; line-height: 1.08; }
+  .sub { color: var(--lav); font-size: 18px; margin: 0 0 26px; max-width: 640px; }
+  .player { display: flex; gap: 14px; flex-wrap: wrap; align-items: stretch; }
+  .stat { background: rgba(255,255,255,.08); border-radius: 14px; padding: 12px 18px; min-width: 130px; }
+  .stat b { display: block; font-size: 26px; color: var(--amber); }
+  .stat span { font-size: 13px; color: var(--lav); }
+  .name { display: flex; align-items: center; gap: 8px; }
+  .name input { background: transparent; border: 0; border-bottom: 2px solid var(--amber); color: #fff; font: inherit;
+                font-size: 20px; font-weight: 700; width: 220px; padding: 4px 0; outline: none; }
+  .name input::placeholder { color: var(--muted); font-weight: 400; }
+  .lvlbar { height: 8px; background: rgba(255,255,255,.15); border-radius: 99px; margin-top: 8px; overflow: hidden; }
+  .lvlbar i { display: block; height: 100%; background: var(--amber); border-radius: 99px; transition: width .6s; }
+
+  /* missions */
+  main { padding: 36px 0 60px; }
+  h2 { font-size: 28px; margin: 0 0 6px; }
+  .lead { color: var(--ink); margin: 0 0 22px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 18px; }
+  .mission { background: var(--cream); border-radius: 18px; padding: 22px; display: flex; flex-direction: column;
+             gap: 10px; border: 2px solid transparent; transition: transform .15s, border-color .15s; }
+  .mission:hover { transform: translateY(-2px); border-color: var(--amber); }
+  .mission .num { width: 46px; height: 46px; border-radius: 50%; background: var(--amber); color: #fff; font-weight: 700;
+                  display: grid; place-items: center; font-size: 20px; }
+  .mission.done .num { background: var(--navy); color: var(--amber); }
+  .mission h3 { margin: 4px 0 0; font-size: 21px; line-height: 1.2; }
+  .mission .q { color: var(--amber-dark); font-style: italic; margin: 0; }
+  .stars { font-size: 22px; letter-spacing: 3px; color: var(--lav); }
+  .stars .on { color: var(--amber); }
+  .row { display: flex; gap: 10px; align-items: center; margin-top: auto; flex-wrap: wrap; }
+  .btn { background: var(--navy); color: #fff; border: 0; border-radius: 999px; padding: 11px 22px; font-weight: 700; }
+  .btn:hover { background: #2F2860; }
+  .btn.amber { background: var(--amber); color: var(--navy); }
+  .btn.amber:hover { background: #F5B95C; }
+  .btn.ghost { background: transparent; color: var(--navy); border: 2px solid var(--rule); }
+  .btn.ghost:hover { border-color: var(--navy); }
+  .link { color: var(--ink); font-size: 14px; }
+  .meta { font-size: 13px; color: var(--muted); }
+
+  .rush { margin-top: 26px; background: var(--navy); color: #fff; border-radius: 18px; padding: 26px;
+          display: flex; gap: 20px; align-items: center; flex-wrap: wrap; justify-content: space-between; }
+  .rush h3 { margin: 8px 0 4px; font-size: 24px; }
+  .rush p { margin: 0; color: var(--lav); }
+  .badges { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 30px; }
+  .badge { border-radius: 999px; padding: 8px 16px; font-size: 14px; font-weight: 700; background: var(--paper);
+           color: var(--muted); border: 2px dashed var(--rule); }
+  .badge.got { background: var(--amber); color: var(--navy); border: 2px solid var(--amber); }
+
+  /* quiz */
+  .quiz { max-width: 820px; margin: 0 auto; padding: 32px 24px 60px; }
+  .qhead { display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
+  .progress { height: 8px; background: var(--rule); border-radius: 99px; margin: 18px 0 26px; overflow: hidden; }
+  .progress i { display: block; height: 100%; background: var(--amber); transition: width .4s; }
+  .qtext { font-size: clamp(22px, 3.2vw, 30px); font-weight: 700; line-height: 1.25; margin: 0 0 22px; }
+  .opts { display: grid; gap: 12px; }
+  .opt { text-align: left; background: var(--cream); border: 2px solid transparent; border-radius: 14px; padding: 16px 18px;
+         display: flex; gap: 14px; align-items: flex-start; font-size: 18px; color: var(--navy); line-height: 1.35;
+         transition: border-color .12s, background .12s; }
+  .opt:hover:not([disabled]) { border-color: var(--amber); }
+  .opt .k { flex: none; width: 30px; height: 30px; border-radius: 50%; background: #fff; display: grid; place-items: center;
+            font-weight: 700; font-size: 14px; color: var(--amber-dark); }
+  .opt[disabled] { cursor: default; }
+  .opt.right { background: var(--good-bg); border-color: var(--good); }
+  .opt.right .k { background: var(--good); color: #fff; }
+  .opt.wrong { background: var(--bad-bg); border-color: var(--bad); }
+  .opt.wrong .k { background: var(--bad); color: #fff; }
+  .opt.dim { opacity: .55; }
+  .why { margin-top: 18px; border-radius: 14px; padding: 16px 20px; background: var(--navy); color: #fff; line-height: 1.45; }
+  .why b { color: var(--amber); display: block; margin-bottom: 4px; }
+  .actions { display: flex; justify-content: space-between; align-items: center; margin-top: 20px; gap: 12px; flex-wrap: wrap; }
+  .streak { font-weight: 700; color: var(--amber-dark); }
+  .timer { font-size: 32px; font-weight: 700; font-variant-numeric: tabular-nums; }
+  .timer.low { color: var(--bad); }
+  .flash { min-height: 26px; margin-top: 14px; font-weight: 700; }
+  .flash.ok { color: var(--good); } .flash.ko { color: var(--bad); }
+
+  /* result */
+  .result { text-align: center; padding: 56px 24px; max-width: 720px; margin: 0 auto; }
+  .big { font-size: 84px; font-weight: 700; color: var(--amber-dark); line-height: 1; }
+  .result .stars { font-size: 44px; margin: 14px 0; }
+  .result p { color: var(--ink); font-size: 18px; }
+  .review { text-align: left; margin-top: 30px; display: grid; gap: 10px; }
+  .review div { background: var(--paper); border-radius: 12px; padding: 12px 16px; font-size: 15px; color: var(--ink); }
+  .review div b { color: var(--navy); }
+  footer { color: var(--muted); font-size: 13px; padding: 24px 0 40px; border-top: 1px solid var(--rule); }
+  .hidden { display: none !important; }
+  @media (max-width: 560px) {
+    .stat { min-width: 0 !important; flex: 1; }
+    .stat.name { flex-basis: 100%; }
+    .name input { width: 100%; }
+    .player .stat:last-child { flex: 2; }
+  }
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <span class="pill">Venture Arena · Training Ground</span>
+    <h1>Train your innovation toolkit</h1>
+    <p class="sub">One mission per session. Answer, learn from the explanation, earn XP and badges. Then try the Demo Day Rush.</p>
+    <div class="player">
+      <div class="stat name"><input id="name" maxlength="28" placeholder="Your name or team" aria-label="Your name or team"></div>
+      <div class="stat"><b id="xp">0</b><span>XP</span></div>
+      <div class="stat" style="min-width:220px"><b id="level">Explorer</b><span id="levelnext">Level 1</span>
+        <div class="lvlbar"><i id="lvlfill" style="width:0"></i></div></div>
+    </div>
+  </div>
+</header>
+
+<section id="home">
+  <main class="wrap">
+    <h2>Missions</h2>
+    <p class="lead">Get 2 stars in a mission to unlock its badge. Your progress is saved in this browser.</p>
+    <div class="grid" id="missions"></div>
+    <div class="rush">
+      <div>
+        <span class="pill">Final challenge</span>
+        <h3>Demo Day Rush</h3>
+        <p>60 seconds, questions from every session. A right answer adds a point; a wrong one costs 5 seconds.</p>
+        <p class="meta" id="rushbest" style="color:var(--lav);margin-top:6px"></p>
+      </div>
+      <button class="btn amber" onclick="startRush()">Start the rush</button>
+    </div>
+    <h2 style="margin-top:40px">Badges</h2>
+    <div class="badges" id="badges"></div>
+  </main>
+  <footer class="wrap">Designing Innovative Products & Business · ESEIAAT – UPC ·
+    <a href="#" class="link" onclick="resetAll();return false;">Reset my progress</a></footer>
+</section>
+
+<section id="quiz" class="hidden">
+  <div class="quiz">
+    <div class="qhead">
+      <span class="pill" id="qlabel"></span>
+      <span class="meta" id="qcount"></span>
+    </div>
+    <div class="progress"><i id="qprog"></i></div>
+    <p class="qtext" id="qtext"></p>
+    <div class="opts" id="opts"></div>
+    <div class="why hidden" id="why"></div>
+    <div class="actions">
+      <button class="btn ghost" onclick="home()">Quit</button>
+      <span class="streak" id="streak"></span>
+      <button class="btn amber hidden" id="next" onclick="nextQ()">Next →</button>
+    </div>
+  </div>
+</section>
+
+<section id="rush" class="hidden">
+  <div class="quiz">
+    <div class="qhead">
+      <span class="pill">Demo Day Rush</span>
+      <span class="timer" id="timer">60</span>
+    </div>
+    <div class="progress"><i id="rprog" style="width:100%"></i></div>
+    <p class="meta" id="rscore">Score: 0</p>
+    <p class="qtext" id="rtext"></p>
+    <div class="opts" id="ropts"></div>
+    <div class="flash" id="rflash"></div>
+    <div class="actions"><button class="btn ghost" onclick="endRush(true)">Quit</button></div>
+  </div>
+</section>
+
+<section id="result" class="hidden">
+  <div class="result" id="resultbox"></div>
+</section>
+
+<script src="quizzes.js"></script>
+<script>
+const LEVELS = [[0, "Explorer"], [100, "Designer"], [250, "Builder"], [450, "Validator"], [700, "Founder"], [950, "Serial innovator"]];
+const BADGES = {s1: "Blue Ocean Navigator", s2: "Empathy Detective", s3: "Model Maker",
+                s4: "Fit Finder", s5: "Experimenter", s6: "Value Engineer"};
+const KEY = "venture-arena-training-v1";
+let state = load();
+
+function load() {
+  try { return Object.assign({name: "", best: {}, rushBest: 0}, JSON.parse(localStorage.getItem(KEY) || "{}")); }
+  catch (e) { return {name: "", best: {}, rushBest: 0}; }
+}
+function save() { try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (e) {} }
+function $(id) { return document.getElementById(id); }
+function shuffle(a) { a = a.slice(); for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; }
+function esc(s) { return String(s).replace(/[&<>"]/g, c => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;"}[c])); }
+function starsFor(c, n) { const p = c / n; return p === 1 ? 3 : p >= .75 ? 2 : p >= .5 ? 1 : 0; }
+function starsHtml(k) { return [0, 1, 2].map(i => `<span class="${i < k ? "on" : ""}">★</span>`).join(""); }
+
+function xp() {
+  let x = 0;
+  for (const b of Object.values(state.best)) x += b.correct * 10 + b.stars * 20;
+  return x + state.rushBest * 5;
+}
+function show(id) {
+  for (const s of ["home", "quiz", "rush", "result"]) $(s).classList.toggle("hidden", s !== id);
+  window.scrollTo(0, 0);
+}
+
+function renderHome() {
+  $("name").value = state.name || "";
+  const x = xp();
+  let li = 0; while (li + 1 < LEVELS.length && x >= LEVELS[li + 1][0]) li++;
+  $("xp").textContent = x;
+  $("level").textContent = LEVELS[li][1];
+  if (li + 1 < LEVELS.length) {
+    const [a, b] = [LEVELS[li][0], LEVELS[li + 1][0]];
+    $("levelnext").textContent = `Level ${li + 1} · ${b - x} XP to ${LEVELS[li + 1][1]}`;
+    $("lvlfill").style.width = ((x - a) / (b - a) * 100) + "%";
+  } else { $("levelnext").textContent = `Level ${li + 1} · max level`; $("lvlfill").style.width = "100%"; }
+
+  $("missions").innerHTML = SESSIONS.map(s => {
+    const b = state.best[s.id];
+    return `<div class="mission ${b ? "done" : ""}">
+      <div class="num">${s.num}</div>
+      <h3>${esc(s.title)}</h3>
+      <p class="q">${esc(s.question)}</p>
+      <div class="stars">${starsHtml(b ? b.stars : 0)}</div>
+      <p class="meta">${b ? `Best: ${b.correct}/${b.total}` : `${s.questions.length} questions`}</p>
+      <div class="row">
+        <button class="btn" onclick="startQuiz('${s.id}')">${b ? "Play again" : "Start mission"}</button>
+        ${s.video ? `<a class="link" href="${esc(s.video)}" target="_blank" rel="noopener">Watch the video</a>` : ""}
+      </div></div>`;
+  }).join("");
+  $("badges").innerHTML = SESSIONS.map(s => {
+    const got = state.best[s.id] && state.best[s.id].stars >= 2;
+    return `<span class="badge ${got ? "got" : ""}">${got ? "★ " : ""}${BADGES[s.id]}</span>`;
+  }).join("") + (() => {
+    const all = SESSIONS.every(s => state.best[s.id] && state.best[s.id].stars >= 2);
+    return `<span class="badge ${all ? "got" : ""}">${all ? "★ " : ""}Innovation Toolkit Master</span>`;
+  })();
+  $("rushbest").textContent = state.rushBest ? `Your best: ${state.rushBest} points` : "No score yet.";
+}
+$("name").addEventListener("input", e => { state.name = e.target.value.trim(); save(); });
+
+/* ---------------- missions ---------------- */
+let Q = null;
+function startQuiz(id) {
+  const s = SESSIONS.find(x => x.id === id);
+  Q = {s, list: shuffle(s.questions), i: 0, correct: 0, streak: 0, bestStreak: 0, log: []};
+  $("qlabel").textContent = `Mission ${s.num} · ${s.title}`;
+  show("quiz"); drawQ();
+}
+function drawQ() {
+  const item = Q.list[Q.i], n = Q.list.length;
+  $("qcount").textContent = `Question ${Q.i + 1} of ${n}`;
+  $("qprog").style.width = (Q.i / n * 100) + "%";
+  $("qtext").textContent = item.q;
+  Q.order = shuffle(item.options.map((t, k) => ({t, k})));
+  $("opts").innerHTML = Q.order.map((o, j) =>
+    `<button class="opt" data-j="${j}" onclick="pick(${j})"><span class="k">${"ABCD"[j]}</span><span>${esc(o.t)}</span></button>`).join("");
+  $("why").classList.add("hidden"); $("next").classList.add("hidden");
+  $("streak").textContent = Q.streak >= 2 ? `Streak ×${Q.streak}` : "";
+  Q.answered = false;
+}
+function pick(j) {
+  if (Q.answered) return;
+  Q.answered = true;
+  const item = Q.list[Q.i], ok = Q.order[j].k === item.answer;
+  document.querySelectorAll("#opts .opt").forEach((b, x) => {
+    b.disabled = true;
+    if (Q.order[x].k === item.answer) b.classList.add("right");
+    else if (x === j) b.classList.add("wrong"); else b.classList.add("dim");
+  });
+  if (ok) { Q.correct++; Q.streak++; Q.bestStreak = Math.max(Q.bestStreak, Q.streak); } else Q.streak = 0;
+  Q.log.push({q: item.q, ok, a: item.options[item.answer]});
+  $("why").innerHTML = `<b>${ok ? "Correct!" : "Not quite."}</b>${esc(item.why)}`;
+  $("why").classList.remove("hidden");
+  $("streak").textContent = Q.streak >= 2 ? `Streak ×${Q.streak}` : "";
+  $("next").textContent = Q.i + 1 < Q.list.length ? "Next →" : "See results";
+  $("next").classList.remove("hidden"); $("next").focus();
+}
+function nextQ() {
+  Q.i++;
+  if (Q.i < Q.list.length) drawQ(); else finishQuiz();
+}
+function finishQuiz() {
+  const n = Q.list.length, st = starsFor(Q.correct, n), id = Q.s.id;
+  const before = xp(), prev = state.best[id];
+  const badgeBefore = prev && prev.stars >= 2;
+  if (!prev || Q.correct > prev.correct) state.best[id] = {correct: Q.correct, total: n, stars: st};
+  save();
+  const gained = xp() - before;
+  const newBadge = !badgeBefore && state.best[id].stars >= 2;
+  const msg = st === 3 ? "Perfect. You could teach this session." : st === 2 ? "Well done: badge-level knowledge."
+            : st === 1 ? "Good start. Review the explanations and try again." : "Watch the session video and give it another go.";
+  $("resultbox").innerHTML = `
+    <span class="pill">Mission ${Q.s.num} complete</span>
+    <div class="big" style="margin-top:22px">${Q.correct}/${n}</div>
+    <div class="stars">${starsHtml(st)}</div>
+    <p>${msg}</p>
+    <p><b>${gained > 0 ? `+${gained} XP` : "No new XP: beat your best score to earn more."}</b>${Q.bestStreak >= 3 ? ` · Best streak ×${Q.bestStreak}` : ""}</p>
+    ${newBadge ? `<p><span class="badge got">★ ${BADGES[id]}</span></p>` : ""}
+    <div class="row" style="justify-content:center;margin-top:20px">
+      <button class="btn amber" onclick="startQuiz('${id}')">Try again</button>
+      <button class="btn" onclick="home()">Back to missions</button>
+    </div>
+    <div class="review">${Q.log.map(l => `<div>${l.ok ? "✔" : "✘"} ${esc(l.q)}<br><b>${esc(l.a)}</b></div>`).join("")}</div>`;
+  show("result");
+}
+
+/* ---------------- rush ---------------- */
+let R = null;
+function startRush() {
+  const pool = [];
+  SESSIONS.forEach(s => s.questions.forEach(q => pool.push(Object.assign({s: s.num}, q))));
+  R = {pool: shuffle(pool), i: 0, score: 0, end: Date.now() + 60000, lock: false};
+  show("rush"); drawR();
+  R.tick = setInterval(tickR, 100);
+}
+function tickR() {
+  const left = Math.max(0, R.end - Date.now());
+  $("timer").textContent = Math.ceil(left / 1000);
+  $("timer").classList.toggle("low", left < 10000);
+  $("rprog").style.width = (left / 600) + "%";
+  if (left <= 0) endRush(false);
+}
+function drawR() {
+  if (R.i >= R.pool.length) { R.pool = shuffle(R.pool); R.i = 0; }
+  const item = R.pool[R.i];
+  $("rscore").textContent = `Score: ${R.score} · from session ${item.s}`;
+  $("rtext").textContent = item.q;
+  R.order = shuffle(item.options.map((t, k) => ({t, k})));
+  $("ropts").innerHTML = R.order.map((o, j) =>
+    `<button class="opt" onclick="pickR(${j})"><span class="k">${"ABCD"[j]}</span><span>${esc(o.t)}</span></button>`).join("");
+  R.lock = false;
+}
+function pickR(j) {
+  if (R.lock) return;
+  R.lock = true;
+  const item = R.pool[R.i], ok = R.order[j].k === item.answer;
+  document.querySelectorAll("#ropts .opt").forEach((b, x) => {
+    b.disabled = true;
+    if (R.order[x].k === item.answer) b.classList.add("right"); else if (x === j) b.classList.add("wrong"); else b.classList.add("dim");
+  });
+  if (ok) { R.score++; $("rflash").className = "flash ok"; $("rflash").textContent = "+1"; }
+  else { R.end -= 5000; $("rflash").className = "flash ko"; $("rflash").textContent = "−5 seconds"; }
+  setTimeout(() => { if (!R || R.done) return; $("rflash").textContent = ""; R.i++; drawR(); }, ok ? 550 : 1300);
+}
+function endRush(quit) {
+  if (!R || R.done) return;
+  R.done = true; clearInterval(R.tick);
+  if (quit) { home(); return; }
+  const before = xp(), record = R.score > state.rushBest;
+  if (record) state.rushBest = R.score;
+  save();
+  $("resultbox").innerHTML = `
+    <span class="pill">Demo Day Rush</span>
+    <div class="big" style="margin-top:22px">${R.score}</div>
+    <p>${record ? "New personal best!" : `Your best is ${state.rushBest}.`} ${xp() > before ? `<b>+${xp() - before} XP</b>` : ""}</p>
+    <div class="row" style="justify-content:center;margin-top:20px">
+      <button class="btn amber" onclick="startRush()">Play again</button>
+      <button class="btn" onclick="home()">Back to missions</button>
+    </div>`;
+  show("result");
+}
+
+function home() { if (R && !R.done) { R.done = true; clearInterval(R.tick); } renderHome(); show("home"); }
+function resetAll() {
+  if (!window.confirmReset) { window.confirmReset = true; const l = event.target; l.textContent = "Click again to confirm"; return; }
+  state = {name: "", best: {}, rushBest: 0}; save(); window.confirmReset = false; home();
+}
+
+document.addEventListener("keydown", e => {
+  const k = e.key.toUpperCase(), idx = "ABCD".indexOf(k) >= 0 ? "ABCD".indexOf(k) : "1234".indexOf(k);
+  if (!$("quiz").classList.contains("hidden")) {
+    if (idx >= 0 && !Q.answered && e.target.tagName !== "INPUT") pick(idx);
+    else if (e.key === "Enter" && Q.answered) { e.preventDefault(); nextQ(); }
+  } else if (!$("rush").classList.contains("hidden") && idx >= 0) pickR(idx);
+});
+renderHome();
+</script>
+</body>
+</html>

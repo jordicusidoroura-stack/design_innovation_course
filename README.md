@@ -68,6 +68,29 @@ Attach the session slides and one of the existing JSON files, and ask:
 
 > Write the video script for this session in exactly the same JSON format as the attached example. Use only the scene types and fields listed in the README of the repo. Each beat is one or two spoken sentences in "say", and "show" lists the element ids that appear when it is spoken. Keep on-screen text short and put the explanation in the narration. Target 7–9 minutes (about 1,100 words of narration). Return only the JSON.
 
+## Training Ground (web game)
+
+`web/` holds a small static web game for students: one quiz mission per session (questions, instant explanations, stars, XP and badges) and a 60-second **Demo Day Rush** that mixes questions from every session. Progress is saved in each student's browser; there are no accounts and no server-side data.
+
+- **Questions** live in `web/quizzes.js`. Each question has four options, the index of the right one (`answer`) and a short explanation (`why`). Options are shuffled when shown.
+- **Video links**: put the Moodle link of each session in its `video` field and a "Watch the video" link appears on the mission.
+
+### Deploy to Cloud Run
+
+From [Google Cloud Shell](https://shell.cloud.google.com) in your project:
+
+```bash
+git clone https://github.com/jordicusidoroura-stack/design_innovation_course
+cd design_innovation_course/web
+bash deploy.sh
+```
+
+The first time, `gcloud` asks to enable Cloud Run, Cloud Build and Artifact Registry and to create an image repository: answer `Y`. At the end it prints the public URL. To publish changes (new questions, video links), `git pull` and run `bash deploy.sh` again.
+
+Cost: the service scales to zero when nobody uses it (`--min-instances 0`) and is capped at 2 instances. A class of students stays far inside Cloud Run's monthly free tier (2 million requests). The only other costs are storing a ~20 MB container image and a one-minute build per deploy: cents per month at most.
+
+To try it locally: `cd web && python3 -m http.server 8000` and open http://localhost:8000.
+
 ## Working locally (optional)
 
 Requires Python 3, Pillow and ffmpeg.
@@ -86,4 +109,5 @@ videokit/      the video engine (layouts, narration, rendering)
 sessions/      one script per session (JSON)
 notebooks/     one Colab notebook per session
 tools/         local preview and notebook generator
+web/           Training Ground web game (static, deployable to Cloud Run)
 ```
