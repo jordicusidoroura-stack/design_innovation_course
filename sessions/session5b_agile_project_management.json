@@ -1,0 +1,272 @@
+{
+  "meta": {
+    "session": "Session 5 · Agile Project Management",
+    "course": "Designing Innovative Products & Business",
+    "author": "Jordi Cusidó Roura",
+    "output": "Session5_Agile_Project_Management.mp4",
+    "tts": "edge",
+    "voice": "en-GB-RyanNeural",
+    "rate": "+0%"
+  },
+  "scenes": [
+    {
+      "type": "title",
+      "label": "Session 5 · Agile",
+      "title": "Agile project management",
+      "subtitle": "The software development life cycle, Scrum, Kanban, and how to run it with Trello or Jira",
+      "beats": [
+        {"say": "Welcome. Once you know what to build, you have to organise the work of building it. In this video: the software development life cycle, Scrum, Kanban, and two tools to run them, Trello and Jira."}
+      ]
+    },
+    {
+      "type": "steps",
+      "label": "01 · The SDLC",
+      "title": "The software development life cycle",
+      "steps": [
+        {"title": "Planning", "text": "Goals, scope, budget, risks."},
+        {"title": "Requirements", "text": "What users and the business need."},
+        {"title": "Design", "text": "Architecture, data, interfaces."},
+        {"title": "Implementation", "text": "Write and review the code."},
+        {"title": "Testing", "text": "Verify it works and meets the need."},
+        {"title": "Deployment", "text": "Release it to users."},
+        {"title": "Maintenance", "text": "Fix, improve, operate."}
+      ],
+      "beats": [
+        {"say": "Every software product, and most digital products, go through the same phases. This is the software development life cycle, or SDLC. Planning: goals, scope, budget and risks. Requirements: what users and the business need. Design: architecture, data and interfaces.", "show": ["s0", "s1", "s2"]},
+        {"say": "Implementation: writing and reviewing the code. Testing: checking that it works and meets the need. Deployment: releasing it to users. And maintenance: fixing, improving and operating it.", "show": ["s3", "s4", "s5", "s6"]},
+        {"say": "The phases are always there. The real question is how you go through them: once, in sequence, or many times, in short cycles."}
+      ]
+    },
+    {
+      "type": "table",
+      "label": "Two ways through the cycle",
+      "title": "Waterfall vs Agile",
+      "headers": ["", "Waterfall", "Agile"],
+      "rows": [
+        ["Phases", "Sequential, once", "Repeated in every iteration"],
+        ["Requirements", "Fixed up front", "Evolve with feedback"],
+        ["Delivery", "One big release at the end", "A working increment every 1–4 weeks"],
+        ["Change", "Expensive, avoided", "Expected and welcomed"],
+        ["Risk", "Discovered late", "Discovered early"]
+      ],
+      "beats": [
+        {"say": "In a waterfall project, you go through the phases once, in sequence. Requirements are fixed at the start, and users see the product at the end.", "show": ["r0", "r1", "r2"]},
+        {"say": "In an agile project, you go through all the phases in every short iteration, and deliver a working increment every one to four weeks. Change is expected, and risks appear early, when they are still cheap to fix.", "show": ["r3", "r4"]},
+        {"say": "Waterfall still works when the problem and the solution are well known, like building a bridge. When they are uncertain, like in a startup, agile wins."}
+      ]
+    },
+    {
+      "type": "list",
+      "label": "Agile Manifesto · 2001",
+      "title": "Four values of the Agile Manifesto",
+      "items": [
+        {"title": "Individuals and interactions", "text": "over processes and tools"},
+        {"title": "Working software", "text": "over comprehensive documentation"},
+        {"title": "Customer collaboration", "text": "over contract negotiation"},
+        {"title": "Responding to change", "text": "over following a plan"}
+      ],
+      "banner": "The items on the right still matter. The items on the left matter more.",
+      "beats": [
+        {"say": "In 2001, seventeen software developers met in Utah and wrote the Agile Manifesto. It has four values. Individuals and interactions over processes and tools. Working software over comprehensive documentation.", "show": ["i0", "i1"]},
+        {"say": "Customer collaboration over contract negotiation. And responding to change over following a plan.", "show": ["i2", "i3"]},
+        {"say": "Notice the word over. Processes, documents, contracts and plans still matter. The things on the left simply matter more.", "show": "banner"}
+      ]
+    },
+    {
+      "type": "cards",
+      "label": "02 · Scrum",
+      "title": "Scrum in one picture: 3 accountabilities, 5 events, 3 artifacts",
+      "cards": [
+        {"tag": "3", "title": "Accountabilities", "text": "Product owner, scrum master, developers."},
+        {"tag": "5", "title": "Events", "text": "The sprint, sprint planning, daily scrum, sprint review, sprint retrospective."},
+        {"tag": "3", "title": "Artifacts", "text": "Product backlog, sprint backlog, increment."}
+      ],
+      "banner": "Scrum is a lightweight framework: few rules, built on transparency, inspection and adaptation.",
+      "beats": [
+        {"say": "Scrum is the most widely used agile framework. You can summarise it in three numbers. Three accountabilities: the product owner, who maximises value and orders the backlog; the scrum master, who makes Scrum work; and the developers, who build.", "show": "card0"},
+        {"say": "Five events: the sprint itself, sprint planning, the daily scrum, the sprint review and the sprint retrospective.", "show": "card1"},
+        {"say": "And three artifacts: the product backlog, the sprint backlog and the increment.", "show": "card2"},
+        {"say": "Scrum is deliberately lightweight. It rests on three pillars: transparency, inspection and adaptation. Sound familiar? It is the same learning loop as Lean Startup, applied to building.", "show": "banner"}
+      ]
+    },
+    {
+      "type": "cycle",
+      "label": "Scrum events",
+      "title": "The sprint: one goal, one to four weeks",
+      "center": "Sprint: 1–4 weeks, one Sprint Goal, a usable increment",
+      "nodes": [
+        {"title": "Planning", "text": "Why this sprint matters, what we can finish, and how."},
+        {"title": "Daily scrum", "text": "15 minutes: progress towards the goal, and what blocks us."},
+        {"title": "Review", "text": "Show the increment to stakeholders; update the backlog."},
+        {"title": "Retro", "text": "Improve how we work in the next sprint."}
+      ],
+      "beats": [
+        {"say": "Everything happens inside the sprint: a fixed period of one to four weeks, with one sprint goal. It starts with sprint planning: why this sprint matters, what the team can finish, and how.", "show": "n0"},
+        {"say": "Every day, a fifteen-minute daily scrum: how are we progressing towards the goal, and what is blocking us?", "show": "n1"},
+        {"say": "At the end, the sprint review: the team shows the increment to stakeholders, and the backlog is updated with what they learned.", "show": "n2"},
+        {"say": "And the retrospective: how can we work better in the next sprint? Then the next sprint starts immediately.", "show": "n3"}
+      ]
+    },
+    {
+      "type": "table",
+      "label": "Scrum artifacts",
+      "title": "Each artifact has a commitment",
+      "headers": ["Artifact", "Commitment", "It answers…"],
+      "rows": [
+        ["Product backlog", "Product goal", "Where is the product going, and what is next?"],
+        ["Sprint backlog", "Sprint goal", "What will we achieve in this sprint?"],
+        ["Increment", "Definition of done", "Is it really finished and usable?"]
+      ],
+      "beats": [
+        {"say": "Since the 2020 Scrum Guide, each artifact comes with a commitment. The product backlog is ordered towards a product goal: where the product is going.", "show": "r0"},
+        {"say": "The sprint backlog is committed to a sprint goal: what we will achieve in this sprint.", "show": "r1"},
+        {"say": "And the increment must meet the definition of done. If it is not done, it is not part of the increment, and it is not shown in the review.", "show": "r2"}
+      ]
+    },
+    {
+      "type": "steps",
+      "label": "SDLC inside Scrum",
+      "title": "Every sprint is a small SDLC",
+      "steps": [
+        {"tag": "Planning", "title": "Plan", "text": "Sprint goal and selected stories."},
+        {"tag": "Daily work", "title": "Design and build", "text": "Small slices, reviewed as you go."},
+        {"tag": "Definition of done", "title": "Test", "text": "Tested before it counts as done."},
+        {"tag": "Increment", "title": "Deploy", "text": "A usable version, ideally released."},
+        {"tag": "Review and retro", "title": "Learn", "text": "Feedback feeds the next sprint."}
+      ],
+      "beats": [
+        {"say": "So where did the software development life cycle go? It did not disappear. It got smaller. Every sprint runs through all the phases. Planning becomes sprint planning.", "show": "s0"},
+        {"say": "Design and implementation happen every day, in small slices.", "show": "s1"},
+        {"say": "Testing is part of the definition of done, not a phase at the end.", "show": "s2"},
+        {"say": "Deployment produces a usable increment, ideally released to real users.", "show": "s3"},
+        {"say": "And maintenance and improvement come from the review and the retrospective. Seven phases, every few weeks, instead of once a year.", "show": "s4"}
+      ]
+    },
+    {
+      "type": "board",
+      "label": "03 · Make work visible",
+      "title": "A Kanban board: To do, Doing, Done",
+      "columns": [
+        {"name": "Backlog"},
+        {"name": "To do"},
+        {"name": "Doing", "wip": 2},
+        {"name": "Done"}
+      ],
+      "cards": [
+        {"text": "Pricing experiment", "col": 0, "row": 0, "tag": "story"},
+        {"text": "Interview 5 maintenance managers", "col": 0, "row": 1, "tag": "story"},
+        {"text": "Landing page for operators", "col": 1, "row": 0, "tag": "story"},
+        {"text": "Failure alert prototype", "col": 2, "row": 0, "tag": "story"},
+        {"text": "Test card for alert value", "col": 2, "row": 1, "tag": "task"},
+        {"text": "Value Proposition Canvas", "col": 3, "row": 0, "tag": "story"}
+      ],
+      "beats": [
+        {"say": "Agile teams make work visible on a board. Each column is a state of the work: backlog, to do, doing and done.", "show": "cols"},
+        {"say": "Each card is a user story or a task.", "show": ["c0", "c1", "c2", "c3", "c4", "c5"]},
+        {"say": "When a card is finished, it moves to done.", "move": {"c3": [3, 1]}},
+        {"say": "And only then does a new card enter doing. This is the key idea of Kanban: a work-in-progress limit. Here, no more than two cards in doing at a time. Stop starting, start finishing.", "move": {"c2": [2, 0]}}
+      ]
+    },
+    {
+      "type": "table",
+      "label": "Scrum or Kanban?",
+      "title": "Two ways to use the board",
+      "headers": ["", "Scrum", "Kanban"],
+      "rows": [
+        ["Cadence", "Fixed sprints of 1–4 weeks", "Continuous flow"],
+        ["Roles", "Product owner, scrum master, developers", "No roles required"],
+        ["Changes", "Between sprints", "At any time"],
+        ["Key metric", "Velocity per sprint", "Lead time and work in progress"],
+        ["Best for", "Building a product towards goals", "Support, operations, flow of requests"]
+      ],
+      "beats": [
+        {"say": "Scrum and Kanban both use boards, but differently. Scrum works in fixed sprints, with defined roles, and changes the plan between sprints.", "show": ["r0", "r1", "r2"]},
+        {"say": "Kanban is a continuous flow, with no required roles, where priorities can change at any time. Scrum measures velocity per sprint. Kanban measures lead time and limits work in progress.", "show": "r3"},
+        {"say": "Use Scrum to build a product towards goals. Use Kanban for support, operations, or any continuous flow of requests. Many teams mix both.", "show": "r4"}
+      ]
+    },
+    {
+      "type": "cards",
+      "label": "04 · Tools",
+      "title": "Trello: simple, visual boards",
+      "cards": [
+        {"title": "Boards, lists, cards", "text": "A board per project, a list per column, a card per task, with checklists, dates and members."},
+        {"title": "Power-Ups and automation", "text": "Add calendars, integrations and rules that move or update cards for you."},
+        {"title": "Free for small teams", "text": "Up to 10 collaborators per workspace on the free plan."}
+      ],
+      "banner": "Best for: student projects, small teams and simple Kanban boards.",
+      "beats": [
+        {"say": "Now the tools. Trello is the simplest way to run a board. A board per project, a list per column, and a card per task, with checklists, due dates and members.", "show": "card0"},
+        {"say": "Power-Ups add calendars and integrations, and automation rules can move or update cards for you.", "show": "card1"},
+        {"say": "The free plan allows up to ten collaborators per workspace.", "show": "card2"},
+        {"say": "Trello is perfect for student projects, small teams and simple Kanban boards like the one we just saw.", "show": "banner"}
+      ]
+    },
+    {
+      "type": "cards",
+      "label": "Tools",
+      "title": "Jira: Scrum and Kanban at scale",
+      "cards": [
+        {"title": "Backlog and sprints", "text": "Epics, stories and sub-tasks; estimate with story points and plan sprints by dragging."},
+        {"title": "Boards and workflows", "text": "Scrum and Kanban boards, with custom statuses and rules."},
+        {"title": "Agile reports", "text": "Burndown and velocity charts show progress and capacity."},
+        {"title": "Free for small teams", "text": "Up to 10 users on the free plan."}
+      ],
+      "banner": "Best for: software teams that run real sprints, track estimates and need reports.",
+      "beats": [
+        {"say": "Jira, also from Atlassian, is built for Scrum. You organise work in epics, stories and sub-tasks, estimate them in story points, and plan sprints by dragging items from the backlog.", "show": "card0"},
+        {"say": "It has Scrum and Kanban boards with custom workflows.", "show": "card1"},
+        {"say": "And agile reports, like burndown and velocity charts, that show progress and the team's real capacity.", "show": "card2"},
+        {"say": "The free plan covers up to ten users.", "show": "card3"},
+        {"say": "Use Jira when a team runs real sprints, tracks estimates and needs reports.", "show": "banner"}
+      ]
+    },
+    {
+      "type": "steps",
+      "label": "In practice",
+      "title": "Set up your project in six steps",
+      "steps": [
+        {"title": "Create the board", "text": "Scrum template in Jira, or a Trello board with lists."},
+        {"title": "Write the backlog", "text": "Epics and user stories, ordered by value."},
+        {"title": "Estimate", "text": "Story points or T-shirt sizes, as a team."},
+        {"title": "Plan the sprint", "text": "A sprint goal and the stories that achieve it."},
+        {"title": "Run it daily", "text": "Move cards, respect WIP, 15-minute daily."},
+        {"title": "Review and retro", "text": "Show the increment, update the backlog."}
+      ],
+      "beats": [
+        {"say": "Here is how to start your own project. Create the board: a Scrum project in Jira, or a Trello board with your lists.", "show": "s0"},
+        {"say": "Write the backlog: epics and user stories, ordered by value. Then estimate them as a team, in story points or T-shirt sizes.", "show": ["s1", "s2"]},
+        {"say": "Plan the first sprint: a sprint goal, and the stories that achieve it.", "show": "s3"},
+        {"say": "Run it every day on the board, respecting the work-in-progress limit. And close each sprint with a review and a retrospective that update the backlog.", "show": ["s4", "s5"]}
+      ]
+    },
+    {
+      "type": "list",
+      "label": "Definition of done",
+      "title": "When is a story really done?",
+      "style": "check",
+      "items": [
+        {"title": "Meets its acceptance criteria"},
+        {"title": "Code reviewed by a teammate"},
+        {"title": "Tests written and passing"},
+        {"title": "Deployed to a test environment"},
+        {"title": "Accepted by the product owner"},
+        {"title": "Documentation updated"}
+      ],
+      "beats": [
+        {"say": "One last tool, and maybe the most important: a shared definition of done. Agree on it before the first sprint. A story is done when it meets its acceptance criteria, has been reviewed by a teammate, and its tests pass.", "show": ["i0", "i1", "i2"]},
+        {"say": "When it is deployed to a test environment, accepted by the product owner, and the documentation is updated. Not before.", "show": ["i3", "i4", "i5"]}
+      ]
+    },
+    {
+      "type": "statement",
+      "label": "Takeaway",
+      "text": "Agile is a way of learning, not a tool.",
+      "sub": "Go through the whole life cycle in short sprints, with clear roles and a visible board. Trello and Jira only make it visible.",
+      "beats": [
+        {"say": "To sum up. The software development life cycle is always there. Agile runs it in short cycles, so you learn early and change cheaply."},
+        {"say": "Scrum gives you roles, events and artifacts. Kanban gives you flow and work-in-progress limits. Trello and Jira make the work visible. But the tool is not the method: what matters is a team that delivers, inspects and adapts, every sprint.", "show": "sub"}
+      ]
+    }
+  ]
+}

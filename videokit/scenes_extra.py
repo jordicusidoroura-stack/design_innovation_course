@@ -549,5 +549,89 @@ class ListScene(_Content):
         return im
 
 
+class BoardScene(_Content):
+    """Kanban / Scrum board. columns: [{name, wip?}], cards: [{text, col, row, tag?}].
+    A beat can move cards: "move": {"c3": [col, row]} animates card c3 to a new slot."""
+    MOVE = 0.8
+
+    def element_ids(self):
+        return ["_header", "cols"] + [f"c{i}" for i in range(len(self.s["cards"]))] + \
+               (["banner"] if self.s.get("banner") else [])
+
+    def schedule(self, starts):
+        super().schedule(starts)
+        self.moves = {}
+        for b, t0 in zip(self.s["beats"], starts):
+            for cid, (col, row) in (b.get("move") or {}).items():
+                self.moves.setdefault(cid, []).append((t0 + 0.2, col, row))
+
+    def state_key(self, t):
+        for lst in getattr(self, "moves", {}).values():
+            if any(m[0] <= t < m[0] + self.MOVE + 0.05 for m in lst):
+                return None
+        k = super().state_key(t)
+        if k is None:
+            return None
+        done = tuple(sorted((c, i) for c, lst in getattr(self, "moves", {}).items()
+                            for i, m in enumerate(lst) if t >= m[0] + self.MOVE))
+        return k + done
+
+    def _slot(self, col, row, geo):
+        x0, cw, gap, top, ch = geo
+        return x0 + col * (cw + gap) + 18, top + 78 + row * (ch + 14)
+
+    def draw(self, t):
+        im, d, bg = self.frame(t)
+        cols = self.s["columns"]
+        n = len(cols)
+        top, bot = self.top(), self.bottom()
+        gap = 22
+        cw = (1740 - gap * (n - 1)) / n
+        ch = self.s.get("card_h", 112)
+        geo = (90, cw, gap, top, ch)
+        ac = self.a("cols", t)
+        hl = self.s.get("highlight")
+        for i, c in enumerate(cols):
+            x = 90 + i * (cw + gap)
+            fill = mix(CREAM if hl != i else (255, 236, 205), bg, ac)
+            d.rounded_rectangle([x, top, x + cw, bot], radius=16, fill=fill)
+            d.text((x + 20, top + 20), c["name"].upper(), font=font("bold", 22), fill=mix(NAVY, fill, ac))
+            if c.get("wip"):
+                lbl = f"WIP {c['wip']}"
+                f = font("bold", 18)
+                w = f.getlength(lbl) + 24
+                d.rounded_rectangle([x + cw - w - 16, top + 18, x + cw - 16, top + 48], radius=15,
+                                    fill=mix(AMBER, fill, ac))
+                d.text((x + cw - w - 4, top + 23), lbl, font=f, fill=mix(NAVY, mix(AMBER, fill, ac), ac))
+        for i, c in enumerate(self.s["cards"]):
+            a = self.a(f"c{i}", t)
+            if a <= 0:
+                continue
+            col, row = c["col"], c["row"]
+            px, py = self._slot(col, row, geo)
+            for (t0, ncol, nrow) in getattr(self, "moves", {}).get(f"c{i}", []):
+                if t >= t0:
+                    nx, ny = self._slot(ncol, nrow, geo)
+                    p = ease((t - t0) / self.MOVE)
+                    px, py = px + (nx - px) * p, py + (ny - py) * p
+                    col, row = ncol, nrow
+            py += (1 - a) * 14
+            w = cw - 36
+            d.rounded_rectangle([px + 3, py + 4, px + w + 3, py + ch + 4], radius=10, fill=mix(RULE, bg, a))
+            d.rounded_rectangle([px, py, px + w, py + ch], radius=10, fill=mix(WHITE, bg, a))
+            yy = py + 14
+            if c.get("tag"):
+                tf = font("bold", 16)
+                tw = tf.getlength(c["tag"].upper()) + 18
+                d.rounded_rectangle([px + 14, yy, px + 14 + tw, yy + 24], radius=12, fill=mix(LAVENDER, WHITE, a))
+                d.text((px + 23, yy + 3), c["tag"].upper(), font=tf, fill=mix(NAVY, WHITE, a))
+                yy += 32
+            ft = fit_font(c["text"], "bold", w - 28, py + ch - 10 - yy, 27, 16, 1.15)
+            text_block(d, (px + 14, yy), c["text"], ft, NAVY, w - 28, WHITE, a, lh=1.15)
+        self.finish(d, t, bg)
+        return im
+
+
 EXTRA_SCENES = {"steps": StepsScene, "cycle": CycleScene, "quad": QuadScene, "vpc": VPCScene,
-                "template": TemplateScene, "stats": StatsScene, "table": TableScene, "list": ListScene}
+                "template": TemplateScene, "stats": StatsScene, "table": TableScene, "list": ListScene,
+                "board": BoardScene}

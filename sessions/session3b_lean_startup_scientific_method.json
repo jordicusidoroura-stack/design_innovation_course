@@ -1,0 +1,263 @@
+{
+  "meta": {
+    "session": "Session 3 · Lean Startup",
+    "course": "Designing Innovative Products & Business",
+    "author": "Jordi Cusidó Roura",
+    "output": "Session3_Lean_Startup_Scientific_Method.mp4",
+    "tts": "edge",
+    "voice": "en-GB-RyanNeural",
+    "rate": "+0%"
+  },
+  "scenes": [
+    {
+      "type": "title",
+      "label": "Session 3 · Lean Startup",
+      "title": "Lean Startup: the scientific method for building a business",
+      "subtitle": "From hypotheses to product–market fit, and to a go-to-market strategy you have tested",
+      "beats": [
+        {"say": "Welcome. In this video we look at Lean Startup from a particular angle: as the scientific method, adapted to building a business. We will see how it takes you to product–market fit, and how it shapes your go-to-market strategy."}
+      ]
+    },
+    {
+      "type": "statement",
+      "label": "01 · Why science?",
+      "text": "A startup is an experiment.",
+      "sub": "Eric Ries defines a startup as an organisation creating something new under extreme uncertainty. When nobody knows the answer, you need a method for finding it.",
+      "beats": [
+        {"say": "Eric Ries defines a startup as an organisation that creates a new product or service under conditions of extreme uncertainty."},
+        {"say": "When nobody knows the answer, opinions and plans are not enough. You need a method for finding the answer. Humanity already has one: the scientific method. Lean Startup adapts it to business.", "show": "sub"}
+      ]
+    },
+    {
+      "type": "table",
+      "label": "The method",
+      "title": "From the scientific method to Lean Startup",
+      "headers": ["", "Scientific method", "Lean Startup"],
+      "rows": [
+        ["Observe", "Study the phenomenon", "Customer discovery: get out of the building"],
+        ["Hypothesis", "A falsifiable prediction", "Leap-of-faith assumptions: value and growth"],
+        ["Experiment", "A controlled test", "A minimum viable product"],
+        ["Analyse", "Compare results with the prediction", "Innovation accounting: actionable metrics"],
+        ["Conclude", "Accept or reject the hypothesis", "Persevere or pivot"]
+      ],
+      "beats": [
+        {"say": "Look at the two methods side by side. A scientist starts by observing. A founder does the same: customer discovery, which Steve Blank summarises as get out of the building.", "show": "r0"},
+        {"say": "A scientist writes a hypothesis that can be proven wrong. A founder writes down the leap-of-faith assumptions the business depends on.", "show": "r1"},
+        {"say": "The scientist runs an experiment. The founder builds a minimum viable product: the smallest experiment that tests the hypothesis with real customers.", "show": "r2"},
+        {"say": "Then both analyse the results against the prediction. In Lean Startup this is called innovation accounting.", "show": "r3"},
+        {"say": "And both conclude. The scientist accepts or rejects the hypothesis. The founder perseveres or pivots.", "show": "r4"}
+      ]
+    },
+    {
+      "type": "cards",
+      "label": "Hypotheses",
+      "title": "Two leap-of-faith assumptions",
+      "cards": [
+        {"title": "Value hypothesis", "text": "Does the product really deliver value to customers once they use it?"},
+        {"title": "Growth hypothesis", "text": "How will new customers discover the product, and keep coming?"}
+      ],
+      "banner": "Test the riskiest one first, and write it so that it can be proven wrong.",
+      "beats": [
+        {"say": "Ries says every business plan rests on two leap-of-faith assumptions. The value hypothesis: does the product really deliver value once customers use it?", "show": "card0"},
+        {"say": "And the growth hypothesis: how will new customers discover it, and keep coming?", "show": "card1"},
+        {"say": "Test the riskiest one first. And write it the way a scientist would: so that it can be proven wrong.", "show": "banner"}
+      ]
+    },
+    {
+      "type": "template",
+      "label": "Hypotheses",
+      "title": "Write hypotheses that can fail",
+      "cards": [
+        {"head": "Falsifiable hypothesis", "rows": [
+          {"lead": "We believe that", "fill": "a specific customer segment"},
+          {"lead": "Will", "fill": "do something observable"},
+          {"lead": "Measured by", "fill": "one metric"},
+          {"lead": "We are right if", "fill": "a threshold, by a date"}
+        ]}
+      ],
+      "example": "We believe that wind-farm maintenance managers will pay 20 € per turbine per month for failure alerts. We are right if 3 of 10 pilot farms sign a contract after a three-month trial.",
+      "example_label": "EXAMPLE (ILLUSTRATIVE)",
+      "beats": [
+        {"say": "A useful hypothesis has four parts. A specific customer. A behaviour you can observe, not an opinion. One metric. And a threshold with a date, decided before you run the test.", "show": "card0"},
+        {"say": "For example: we believe that wind-farm maintenance managers will pay twenty euros per turbine per month for failure alerts. We are right if three of ten pilot farms sign a contract after a three-month trial. If they don't, the hypothesis is rejected, and you have learned something.", "show": "example"}
+      ]
+    },
+    {
+      "type": "cycle",
+      "label": "The experiment loop",
+      "title": "Build – Measure – Learn, planned in reverse",
+      "center": "Plan backwards: learn → measure → build",
+      "nodes": [
+        {"title": "Learn", "text": "First decide what you need to learn: which hypothesis?"},
+        {"title": "Measure", "text": "Then decide which metric would prove it right or wrong."},
+        {"title": "Build", "text": "Only then build the smallest MVP that produces that metric."}
+      ],
+      "beats": [
+        {"say": "The experiment loop is build, measure, learn. But Ries points out that you should plan it in reverse. First, decide what you need to learn: which hypothesis are you testing?", "show": "n0"},
+        {"say": "Then decide what you need to measure to prove it right or wrong.", "show": "n1"},
+        {"say": "Only then decide what to build: the smallest product that can produce that measurement. Anything more is waste.", "show": "n2"}
+      ]
+    },
+    {
+      "type": "steps",
+      "label": "Experiments",
+      "title": "Five kinds of MVP experiment",
+      "steps": [
+        {"title": "Smoke test", "text": "A landing page for a product that does not exist yet. Measures sign-ups."},
+        {"title": "Concierge", "text": "Deliver the service by hand to a few customers. Measures value."},
+        {"title": "Wizard of Oz", "text": "Looks automated, humans behind the curtain. Measures usage."},
+        {"title": "Pre-order", "text": "Ask for payment before building. Measures willingness to pay."},
+        {"title": "A/B test", "text": "Two versions, split traffic. Measures which one works better."}
+      ],
+      "beats": [
+        {"say": "An MVP is not a small version of your product. It is an experiment, and there are many kinds. A smoke test: a landing page for a product that does not exist yet.", "show": "s0"},
+        {"say": "A concierge MVP: you deliver the service by hand to a handful of customers.", "show": "s1"},
+        {"say": "A Wizard of Oz MVP: it looks automated, but humans do the work behind the curtain.", "show": "s2"},
+        {"say": "A pre-order: ask for money before you build. Nothing measures willingness to pay better.", "show": "s3"},
+        {"say": "And the A/B test: two versions, split traffic, and see which one performs better. This is the controlled experiment of the scientific method.", "show": "s4"}
+      ]
+    },
+    {
+      "type": "table",
+      "label": "Innovation accounting",
+      "title": "Measure like a scientist: actionable, not vanity, metrics",
+      "headers": ["Vanity metric", "Actionable metric"],
+      "rows": [
+        ["Total sign-ups since launch", "Weekly active users, by cohort"],
+        ["Page views", "Conversion rate of each experiment"],
+        ["App downloads", "Users still active after four weeks"],
+        ["“Customers love it”", "Customers who paid, renewed or referred someone"]
+      ],
+      "banner": "Good metrics are actionable, accessible and auditable: they show cause and effect, everyone understands them, and they can be checked.",
+      "beats": [
+        {"say": "Analysing results is where many teams fool themselves. Vanity metrics, like total sign-ups or page views, always go up and make you feel good. They tell you nothing about cause and effect."},
+        {"say": "Actionable metrics do: weekly active users by cohort, the conversion rate of each experiment, how many users are still active after four weeks.", "show": ["r0", "r1", "r2"]},
+        {"say": "And replace opinions like customers love it with behaviour: who paid, who renewed, who referred someone.", "show": "r3"},
+        {"say": "Ries asks for metrics that are actionable, accessible and auditable: they show cause and effect, everyone understands them, and anyone can check them.", "show": "banner"}
+      ]
+    },
+    {
+      "type": "cards",
+      "label": "Conclude",
+      "title": "Persevere, pivot or stop",
+      "cards": [
+        {"title": "Persevere", "text": "The evidence supports the hypothesis: keep going and test the next riskiest one."},
+        {"title": "Pivot", "text": "Part of the model is wrong: change one element and keep what you learned."},
+        {"title": "Stop", "text": "The core hypothesis is rejected: stop, and spend the time on a better idea."}
+      ],
+      "beats": [
+        {"say": "Every experiment ends with a decision. Persevere: the evidence supports the hypothesis, so keep going, and test the next riskiest assumption.", "show": "card0"},
+        {"say": "Pivot: part of the model is wrong. Change one element, like the segment, the channel or the revenue model, and keep what you learned.", "show": "card1"},
+        {"say": "Or stop. A rejected hypothesis is not a failure of the method. It is the method working, and it frees your time for a better idea.", "show": "card2"}
+      ]
+    },
+    {
+      "type": "statement",
+      "label": "02 · Product–market fit",
+      "text": "“Being in a good market with a product that can satisfy that market.”",
+      "sub": "Marc Andreessen, 2007. Lean Startup is the method for searching for that fit.",
+      "beats": [
+        {"say": "So where does all this experimenting lead? To product–market fit. Marc Andreessen defined it in 2007 as being in a good market, with a product that can satisfy that market."},
+        {"say": "Product–market fit is the destination. Lean Startup is the method for getting there: each experiment brings you closer, or tells you to change direction.", "show": "sub"}
+      ]
+    },
+    {
+      "type": "cards",
+      "label": "Product–market fit",
+      "title": "Three signals that you have product–market fit",
+      "cards": [
+        {"tag": "40%", "title": "The Sean Ellis test", "text": "At least 40% of users would be very disappointed if they could no longer use the product."},
+        {"title": "Retention flattens", "text": "Each cohort's usage curve stops falling and stays flat: people keep coming back."},
+        {"title": "Market pull", "text": "Customers find you by word of mouth, sales cycles get shorter, and you can't keep up with demand."}
+      ],
+      "beats": [
+        {"say": "How do you know you have it? Three signals. First, the Sean Ellis test: ask users how they would feel if they could no longer use the product. If at least forty percent say very disappointed, you are probably there.", "show": "card0"},
+        {"say": "Second, retention. Plot each cohort of users over time. When the curve stops falling and goes flat, people are coming back because they need the product.", "show": "card1"},
+        {"say": "Third, pull. Customers find you by word of mouth, sales get easier, and it feels like the market is pulling the product out of your hands.", "show": "card2"}
+      ]
+    },
+    {
+      "type": "steps",
+      "label": "Customer development",
+      "title": "Search first, then execute",
+      "steps": [
+        {"tag": "Search", "title": "Customer discovery", "text": "Is there a problem worth solving, and for whom?"},
+        {"tag": "Search", "title": "Customer validation", "text": "Will they use it and pay? Is the model repeatable?"},
+        {"tag": "Execute", "title": "Customer creation", "text": "Create demand and scale the go-to-market."},
+        {"tag": "Execute", "title": "Company building", "text": "From a search team to a company that executes."}
+      ],
+      "banner": "Product–market fit is the line between searching and executing. Scaling before it burns money.",
+      "beats": [
+        {"say": "Steve Blank's customer development model shows where fit sits. The first two steps are about searching. Customer discovery: is there a problem worth solving, and for whom?", "show": "s0"},
+        {"say": "Customer validation: will they use it, will they pay, and can you repeat the sale?", "show": "s1"},
+        {"say": "Only then do you execute. Customer creation: build demand and scale your go-to-market.", "show": "s2"},
+        {"say": "And company building: turn a team that searches into a company that executes.", "show": "s3"},
+        {"say": "Product–market fit is the line between searching and executing. Most startups that fail scale too early: they pour money into marketing and sales before the product fits.", "show": "banner"}
+      ]
+    },
+    {
+      "type": "table",
+      "label": "03 · Go-to-market",
+      "title": "Your go-to-market strategy is a set of hypotheses too",
+      "headers": ["Decision", "Hypothesis", "Cheap test"],
+      "rows": [
+        ["Beachhead segment", "This segment needs it most, and buys first", "Interviews and one landing page per segment"],
+        ["Message", "This value proposition makes them act", "A/B test two messages in ads or e-mails"],
+        ["Channel", "We can reach them here at an acceptable cost", "Small budget per channel; measure cost per customer"],
+        ["Price", "They will pay this much", "Pre-orders or two price levels"],
+        ["Sales motion", "Pilots turn into contracts", "Paid pilots with clear success criteria"]
+      ],
+      "beats": [
+        {"say": "Here is where Lean Startup meets go-to-market strategy. A go-to-market plan answers five questions: who do we sell to first, with what message, through which channel, at what price, and how do we close the sale. Each answer is a hypothesis."},
+        {"say": "Which segment needs it most and will buy first? That is your beachhead. Test it with interviews and a separate landing page per segment.", "show": "r0"},
+        {"say": "Which message makes them act? A/B test two value propositions in ads or e-mails.", "show": "r1"},
+        {"say": "Which channel reaches them at an acceptable cost? Spend a small budget on each, and measure what it costs to get one customer.", "show": "r2"},
+        {"say": "What will they pay? Test with pre-orders or two price levels. And for business customers, does a pilot turn into a contract? Run paid pilots with clear success criteria.", "show": ["r3", "r4"]}
+      ]
+    },
+    {
+      "type": "cards",
+      "label": "Go-to-market",
+      "title": "Choose one engine of growth",
+      "cards": [
+        {"title": "Sticky", "text": "Customers stay. Grow when new customers arrive faster than others leave."},
+        {"title": "Viral", "text": "Customers bring customers. Grow when each one brings more than one new user."},
+        {"title": "Paid", "text": "You buy customers. Grow when a customer's lifetime value exceeds what it costs to acquire them."}
+      ],
+      "banner": "Pick one engine, find the metric that drives it, and run experiments to improve that metric.",
+      "beats": [
+        {"say": "Once you have fit, how do you grow? Ries describes three engines of growth. The sticky engine: customers stay, and you grow when new ones arrive faster than others leave.", "show": "card0"},
+        {"say": "The viral engine: customers bring customers. You grow when each user brings in more than one new user.", "show": "card1"},
+        {"say": "The paid engine: you buy customers with advertising or sales. You grow when a customer's lifetime value is higher than the cost of acquiring them.", "show": "card2"},
+        {"say": "Pick one engine, find the metric that drives it, and keep experimenting to improve that metric. The scientific method doesn't stop at fit.", "show": "banner"}
+      ]
+    },
+    {
+      "type": "steps",
+      "label": "Case · SMARTIVE",
+      "title": "SMARTIVE: the method applied",
+      "steps": [
+        {"tag": "Hypothesis", "title": "Operators need a diagnostic platform", "text": "Turbines stop 5–40% of the time; their data is lost."},
+        {"tag": "Experiment", "title": "Traffic-light grid, then a dashboard", "text": "Each prototype answered one question from operators."},
+        {"tag": "Evidence", "title": "They want the diagnosis, not the platform", "text": "Value lay in the analysis, not in the software."},
+        {"tag": "Decision", "title": "Pivot to SmartCast services", "text": "Same data, sold as a service per turbine per month."}
+      ],
+      "beats": [
+        {"say": "Let's see the whole method in a real case. SMARTIVE's hypothesis: wind-farm operators need a platform to diagnose their turbines, which stop between five and forty percent of the time while their data is lost.", "show": "s0"},
+        {"say": "The experiments: first a simple traffic-light grid of turbines, then a web dashboard with alarms. Each prototype answered one question from operators.", "show": "s1"},
+        {"say": "The evidence: operators did not want another platform to run. What they valued was the diagnosis itself.", "show": "s2"},
+        {"say": "The decision: pivot to SmartCast services, the same data and algorithms, sold as a service per turbine per month. A new value proposition, a new revenue model, and a new go-to-market.", "show": "s3"}
+      ]
+    },
+    {
+      "type": "statement",
+      "label": "Takeaway",
+      "text": "Hypothesis, experiment, evidence, decision.",
+      "sub": "Lean Startup is the scientific method applied to business: use it to search for product–market fit, and treat your go-to-market as hypotheses to test before you scale.",
+      "beats": [
+        {"say": "To sum up. Lean Startup is the scientific method applied to business: observe, write falsifiable hypotheses, run the smallest experiment, measure what matters, and decide."},
+        {"say": "Use it to search for product–market fit. And once you are close, keep using it for your go-to-market: segment, message, channel and price are hypotheses too. Test them before you scale.", "show": "sub"}
+      ]
+    }
+  ]
+}

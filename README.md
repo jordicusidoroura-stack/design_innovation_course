@@ -11,8 +11,10 @@ Each session has **one script**, **one notebook** and **one video**. The noteboo
 | 1 · Innovation, Blue Ocean & Open Innovation | [Open](https://colab.research.google.com/github/jordicusidoroura-stack/design_innovation_course/blob/main/notebooks/Session1_Innovation_Blue_Ocean.ipynb) | `sessions/session1_innovation_blue_ocean.json` | 9–10 min |
 | 2 · Design Thinking | [Open](https://colab.research.google.com/github/jordicusidoroura-stack/design_innovation_course/blob/main/notebooks/Session2_Design_Thinking.ipynb) | `sessions/session2_design_thinking.json` | 7 min |
 | 3 · Business Model Canvas & Lean Startup | [Open](https://colab.research.google.com/github/jordicusidoroura-stack/design_innovation_course/blob/main/notebooks/Session3_BMC_Lean_Startup.ipynb) | `sessions/session3_bmc_lean_startup.json` | 15 min |
+| 3 · Lean Startup: the scientific method, PMF & go-to-market | [Open](https://colab.research.google.com/github/jordicusidoroura-stack/design_innovation_course/blob/main/notebooks/Session3_Lean_Startup_Scientific_Method.ipynb) | `sessions/session3b_lean_startup_scientific_method.json` | 9–10 min |
 | 4 · Value Proposition Design | [Open](https://colab.research.google.com/github/jordicusidoroura-stack/design_innovation_course/blob/main/notebooks/Session4_Value_Proposition_Design.ipynb) | `sessions/session4_value_proposition_design.json` | 6 min |
 | 5 · Testing Business Ideas & Agile | [Open](https://colab.research.google.com/github/jordicusidoroura-stack/design_innovation_course/blob/main/notebooks/Session5_Testing_Business_Ideas_Agile.ipynb) | `sessions/session5_testing_business_ideas_agile.json` | 8 min |
+| 5 · Agile Project Management: SDLC, Scrum, Kanban, Trello & Jira | [Open](https://colab.research.google.com/github/jordicusidoroura-stack/design_innovation_course/blob/main/notebooks/Session5_Agile_Project_Management.ipynb) | `sessions/session5b_agile_project_management.json` | 8–9 min |
 | 6 · From Innovation to Scalable Value | [Open](https://colab.research.google.com/github/jordicusidoroura-stack/design_innovation_course/blob/main/notebooks/Session6_Innovation_to_Scalable_Value.ipynb) | `sessions/session6_innovation_to_scalable_value.json` | 7–8 min |
 
 ## Making a video
@@ -58,6 +60,7 @@ Voice settings are in `meta` (`voice`, `rate`), or can be overridden in the note
 | `split` | Key vs not key | `left{head, items}`, `right{head, items}`, `banner` | `lhead l0… rhead r0…`, `banner` |
 | `vpc` | Value Proposition Canvas | `items{jobs, gains, pains, products, gain_creators, pain_relievers}?` | `shape`, those keys, `fit` |
 | `strategy` | Blue Ocean strategy canvas | `factors`, `curves[{name, color: ink/amber, values 0–5}]`, `note?` | `curve0`, `curve1` |
+| `board` | Kanban board with cards that move | `columns[{name, wip?}]`, `cards[{text, col, row, tag?}]`, `banner?`; a beat can add `"move": {"c3": [col, row]}` | `cols`, `c0`…, `banner` |
 | `errc` | ERRC grid | `quads[4×{question, items}]`, `banner?` | `q0`…`q3`, `banner` |
 
 Elements that no beat mentions appear at the start of the scene.
@@ -67,6 +70,17 @@ Elements that no beat mentions appear at the start of the scene.
 Attach the session slides and one of the existing JSON files, and ask:
 
 > Write the video script for this session in exactly the same JSON format as the attached example. Use only the scene types and fields listed in the README of the repo. Each beat is one or two spoken sentences in "say", and "show" lists the element ids that appear when it is spoken. Keep on-screen text short and put the explanation in the narration. Target 7–9 minutes (about 1,100 words of narration). Return only the JSON.
+
+## Slides
+
+`slides/` holds PowerPoint decks in the course format (navy, Arial, 16:9, the session's accent colour), built from text so they stay consistent:
+
+| Deck | File |
+|---|---|
+| Lean Startup: the scientific method, product–market fit and go-to-market (session 3) | `slides/Session3_Lean_Startup_Scientific_Method.pptx` |
+| Agile Project Management: SDLC, Scrum, Kanban, Trello and Jira (session 5) | `slides/Session5_Agile_Project_Management.pptx` |
+
+Edit the text in `slides/decks.js` and rebuild with `node slides/build_decks.js` (needs Node.js and `npm install pptxgenjs`). The decks can also be edited directly in PowerPoint.
 
 ## Training Ground (web game)
 
@@ -109,5 +123,6 @@ videokit/      the video engine (layouts, narration, rendering)
 sessions/      one script per session (JSON)
 notebooks/     one Colab notebook per session
 tools/         local preview and notebook generator
+slides/        course decks (.pptx) and their generator
 web/           Training Ground web game (static, deployable to Cloud Run)
 ```
